@@ -1,7 +1,33 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
-const Listen = () => {
-    return <h1>Listen</h1>
+import {getListenContent} from '../actions/content'
+import listenContent from '../content/listenContent';
+
+
+class ListenPage extends Component {
+    
+    componentWillMount(){
+        this.props.udateContent();
+    }
+    
+    render(){
+        const content = this.props.state.content;
+        return(
+            <div>
+                <h1>{content.title}</h1>
+                <h3>{content.subtitle}</h3>
+            </div>
+        )
+    }
 }
 
-export default Listen;
+function mapStateToProps(state){
+    return {state: state}
+}
+
+function mapDispatchToProps(dispatch){
+    return {udateContent: () => dispatch(getListenContent())};
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(ListenPage);

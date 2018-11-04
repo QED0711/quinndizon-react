@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
+import {getHomeContent} from '../actions/content'
+
 class HomePage extends Component {
+    
     componentWillMount(){
-        console.log(this.props)
+        this.props.updateContent();
     }
     
     render(){
@@ -20,7 +23,10 @@ class HomePage extends Component {
 function mapStateToProps(state){
     return {state: state}
 }
-const connector = connect(mapStateToProps)
-const connectedComponent = connector(HomePage)
 
-export default connectedComponent;
+function mapDispatchToProps(dispatch){
+    return {updateContent: () => dispatch(getHomeContent())}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+
