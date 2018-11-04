@@ -7,14 +7,16 @@ class HomePage extends Component {
     
     componentWillMount(){
         this.props.updateContent();
+        
     }
     
     render(){
         const content = this.props.state.content;
+        const heading = this.props.state.heading 
         return(
             <div>
-                <h1>{content.title}</h1>
-                <h3>{content.subtitle}</h3>
+                <h1>{heading.title}</h1>
+                <h3>{heading.subtitle}</h3>
             </div>
         )
     }

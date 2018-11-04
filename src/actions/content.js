@@ -9,3 +9,11 @@ export function getListenContent(){
 export function getEventsContent(){
     return {type: 'GET_EVENTS_CONTENT'}
 }
+
+export function getResumeContent(){
+    return {type: 'GET_RESUME_CONTENT'}
+}
+
+export function getContactContent(){
+    return {type: 'GET_CONTACT_CONTENT'}
+}

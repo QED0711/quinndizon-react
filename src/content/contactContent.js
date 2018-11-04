@@ -1,8 +1,7 @@
 export default {
-    route: "home",
     heading: {
-        title: "About",
-        subtitle: "Biography"
+        title: "Contact",
+        subtitle: "Send Quinn A Message"
     },
     content: {
         
