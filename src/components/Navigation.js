@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom'
 const Navigation = () => {
     return(
         <nav>
-        <Link to="/">Home</Link>
-        <br/>
-        <Link to="/events">Events</Link>
-        <br/>
-        <Link to="/listen">Listen</Link>
-        <br/>
-        <Link to="/resume">Resume</Link>
-        <br/>
-        <Link to="/contact">Contact</Link>
+            <p>
+                <Link to="/">Home</Link> 
+                -|-
+                <Link to="/events">Events</Link>
+                -|-
+                <Link to="/listen">Listen</Link>
+                -|-
+                <Link to="/resume">Resume</Link>
+                -|-
+                <Link to="/contact">Contact</Link>
+            </p>
         </nav>
     )
 }
