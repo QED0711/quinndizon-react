@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 
 import {getEventsContent} from '../actions/content';
 
+import SectionBanner from '../components/sectionBanner'
+
 class EventsPage extends Component {
     componentWillMount(){
         this.props.updateContent();
@@ -13,8 +15,7 @@ class EventsPage extends Component {
         const heading = this.props.state.heading;
         return(
             <div>
-                <h1>{heading.title}</h1>
-                <h3>{heading.subtitle}</h3>
+                <SectionBanner heading={heading} />
             </div>
         )
     }
