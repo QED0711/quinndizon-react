@@ -6,3 +6,5 @@ const rootReducer = combineReducers(
 )
 
 export default rootReducer;
+
+// causing issues where the state is nto given on getState(), but the reducer instead.

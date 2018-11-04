@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import {connect} from 'react-redux'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import './App.css';
 
@@ -13,12 +14,9 @@ import ContactPage from './containers/ContactPage';
 
 
 class App extends Component {
-  componentDidMount(){
-
-  }
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <div>
           <Navigation />
           <Route path="/" exact component={HomePage} />
@@ -27,9 +25,17 @@ class App extends Component {
           <Route path="/resume" exact component={ResumePage} />
           <Route path="/contact" exact component={ContactPage} />
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return({state})
+}
+
+const connector = connect(mapStateToProps);
+const connectedCommponent = connector(App);
+
+
+export default connectedCommponent;

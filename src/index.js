@@ -4,19 +4,19 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 // import store from './stores/store';
 import configureStore from './store/configureStore'
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
-
+import {getHomeContent, getListenContent} from './actions/content'
 
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const store = configureStore();
-
+store.dispatch(getHomeContent());
 ReactDOM.render(
     <Provider store={store}>
-        <App onLoad={console.log("store: ", store.dispatch({type: "HOME"}))} />
+        <App store={store} />
     </Provider>,
 document.getElementById('root'));
 

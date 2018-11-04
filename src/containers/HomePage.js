@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
-
-// const Home = () => {
-//     return <h1>Home Page</h1>
-// }
+import {connect} from 'react-redux';
 
 class HomePage extends Component {
+    componentWillMount(){
+        console.log(this.props)
+    }
+    
     render(){
+        const content = this.props.state.content;
         return(
-            <h1>Welcome to the Home Page</h1>
+            <div>
+                <h1>{content.title}</h1>
+                <h3>{content.subtitle}</h3>
+            </div>
         )
     }
 }
 
-export default HomePage;
+function mapStateToProps(state){
+    return {state: state}
+}
+const connector = connect(mapStateToProps)
+const connectedComponent = connector(HomePage)
+
+export default connectedComponent;
