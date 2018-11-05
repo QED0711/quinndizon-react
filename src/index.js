@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore'
 // import { connect } from 'react-redux';
 
-import {getHomeContent, getListenContent} from './actions/content'
+import {getHomeContent} from './actions/content'
 
 import './index.css';
 import App from './App';

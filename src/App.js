@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './App.css';
 
+import LandingBox from './components/LandingBox'
 import Navigation from './components/Navigation'
+
 
 import HomePage from './containers/HomePage';
 import ListenPage from './containers/ListenPage';
@@ -15,15 +17,13 @@ import ContactPage from './containers/ContactPage';
 
 class App extends Component {
   
-  componentWillMount(){
-    // console.log(this.props)
-  }
-  
   render() {
     return (
       <Router>
         <div>
+          <LandingBox />
           <Navigation />
+
           <Route path="/" exact component={HomePage} />
           <Route path="/listen" exact component={ListenPage} />
           <Route path="/events" exact component={EventsPage} />

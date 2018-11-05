@@ -7,16 +7,18 @@ import SectionBanner from '../components/sectionBanner'
 
 class ContactPage extends Component {
     componentWillMount(){
-        this.props.dispatch(getContactContent())
+        this.props.updateContent();
     }
 
     render(){
         const content = this.props.state.content;
         const heading = this.props.state.heading;
         return(
-            <div>
-                <SectionBanner heading={heading} />
-            </div>
+            <section id="content">
+                <div className="content-heading">
+                    <SectionBanner heading={heading} />
+                </div>
+            </section>
         )
     }
 }
@@ -26,7 +28,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-    return {dispatch: dispatch}
+    return {updateContent: () => dispatch(getContactContent())};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactPage)

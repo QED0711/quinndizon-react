@@ -15,9 +15,11 @@ class ListenPage extends Component {
         const content = this.props.state.content;
         const heading = this.props.state.heading;
         return(
-            <div>
-                <SectionBanner heading={heading} />
-            </div>
+            <section id="content">
+                <div className="content-heading">
+                    <SectionBanner heading={heading} />
+                </div>
+            </section>
         )
     }
 }

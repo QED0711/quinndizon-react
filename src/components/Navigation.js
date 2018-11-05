@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Navigation = () => {
@@ -6,13 +6,9 @@ const Navigation = () => {
         <nav>
             <p>
                 <Link to="/">Home</Link> 
-                -|-
                 <Link to="/events">Events</Link>
-                -|-
                 <Link to="/listen">Listen</Link>
-                -|-
                 <Link to="/resume">Resume</Link>
-                -|-
                 <Link to="/contact">Contact</Link>
             </p>
         </nav>

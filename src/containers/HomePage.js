@@ -5,19 +5,28 @@ import {getHomeContent} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
 
+import {TextBlock} from '../components/ContentBoxes';
+
 class HomePage extends Component {
-    
-    componentWillMount(){
-        this.props.updateContent();    
+    constructor(props){
+        super(props);
+        this.props.updateContent();
     }
+    // componentWillMount(){
+    //     this.props.updateContent();    
+    // }
     
     render(){
+        // console.log("CONTENT: ", this.props.state.content)
         const content = this.props.state.content;
         const heading = this.props.state.heading 
         return(
-            <div>
-                <SectionBanner heading={heading} />
-            </div>
+            <section id="content">
+                <div className="content-heading">
+                    <SectionBanner heading={heading} />
+                </div>
+                    {content.length && content.map((text, i) => <p key={i}>{text}</p>)}
+            </section>
         )
     }
 }

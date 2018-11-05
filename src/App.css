@@ -30,3 +30,21 @@
     transform: rotate(360deg);
   }
 }
+
+#landing-box{
+  margin: 0 auto;
+  width: 85%;
+}
+
+nav{
+  text-align: center;
+}
+
+nav a{
+  margin: 0 30px;
+}
+
+#content{
+  width: 85%;
+  margin: 0 auto;
+}
