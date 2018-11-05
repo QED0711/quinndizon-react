@@ -8,8 +8,7 @@ import SectionBanner from '../components/sectionBanner'
 class HomePage extends Component {
     
     componentWillMount(){
-        this.props.updateContent();
-        
+        this.props.updateContent();    
     }
     
     render(){
