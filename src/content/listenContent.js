@@ -1,7 +1,7 @@
 import {audioBox} from '../js/Tags'
 
 export default {
-    route: "Listen",
+    route: "listen",
     heading: {
         title: "Listen",
         subtitle: "List of Works"

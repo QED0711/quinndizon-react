@@ -13,14 +13,7 @@ class ListenPage extends Component {
     }
     
     render(){
-        let content = this.props.state.content;
-        if(Array.isArray(content)){
-            content = content.map((c, i) => {
-                return(
-                    <WorkTitleBox content={c} />
-                )
-            })
-        }
+        const content = this.props.state.route === "listen" ? this.props.state.content.map((c, i) => <WorkTitleBox key={i} content={c} />) : {};
         const heading = this.props.state.heading;
         return(
             <section id="content">

@@ -14,8 +14,8 @@ class HomePage extends Component {
     }
     
     render(){
-        const content = this.props.state.content;
-        const heading = this.props.state.heading 
+        const content = this.props.state.route === "home" ? this.props.state.content : {};
+        const heading = this.props.state.heading; 
         return(
             <section id="content">
                 <div className="content-heading">
