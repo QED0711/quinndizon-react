@@ -12,12 +12,8 @@ class HomePage extends Component {
         super(props);
         this.props.updateContent();
     }
-    // componentWillMount(){
-    //     this.props.updateContent();    
-    // }
     
     render(){
-        // console.log("CONTENT: ", this.props.state.content)
         const content = this.props.state.content;
         const heading = this.props.state.heading 
         return(
@@ -25,7 +21,7 @@ class HomePage extends Component {
                 <div className="content-heading">
                     <SectionBanner heading={heading} />
                 </div>
-                    {content.length && content.map((text, i) => <p key={i}>{text}</p>)}
+                    {Array.isArray(content) && content.map((text, i) => <p key={i}>{text}</p>)}
             </section>
         )
     }

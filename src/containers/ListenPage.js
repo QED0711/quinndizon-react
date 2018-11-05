@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {getListenContent} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
+import WorkTitleBox from '../components/WorkTitleBox'
 
 class ListenPage extends Component {
     
@@ -12,13 +13,21 @@ class ListenPage extends Component {
     }
     
     render(){
-        const content = this.props.state.content;
+        let content = this.props.state.content;
+        if(Array.isArray(content)){
+            content = content.map((c, i) => {
+                return(
+                    <WorkTitleBox content={c} />
+                )
+            })
+        }
         const heading = this.props.state.heading;
         return(
             <section id="content">
                 <div className="content-heading">
                     <SectionBanner heading={heading} />
                 </div>
+                {Array.isArray(content) && content}
             </section>
         )
     }
