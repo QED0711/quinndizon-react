@@ -4,7 +4,8 @@ const WorkTitleBox = (props) => {
     console.log(props.content)
     const content = props.content
     const style = {
-        background: `url(${content.imgSrc})`,
+        // background: "rgba(255, 0, 0, 0.25)",
+        backgroundImage: `url(${content.imgSrc})`,
     }
     return(
         <div className="work-title-box" style={style}>

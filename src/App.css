@@ -59,6 +59,8 @@ nav a{
   /* border: 1px solid black; */
   box-shadow: 4px 4px 20px 2px rgb(204, 204, 204);
   color: white;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .work-title-box h4{
@@ -67,7 +69,7 @@ nav a{
   
 }
 
-.content-grid{
+#listen-content-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 10px;
