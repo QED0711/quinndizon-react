@@ -15,6 +15,16 @@ export default {
             "Awakening",
             "image source",
             "audio source"
+        ),
+        audioBox(
+            "12 Haiku",
+            "image source",
+            "audio source"
+        ),
+        audioBox(
+            "Concertante",
+            "image source",
+            "audio source"
         )
     ]
 }

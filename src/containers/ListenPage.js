@@ -20,7 +20,9 @@ class ListenPage extends Component {
                 <div className="content-heading">
                     <SectionBanner heading={heading} />
                 </div>
-                {Array.isArray(content) && content}
+                <div className="content-grid">
+                    {Array.isArray(content) && content}
+                </div>
             </section>
         )
     }
