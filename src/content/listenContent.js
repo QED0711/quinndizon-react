@@ -13,7 +13,7 @@ export default {
             "http://ks4.imslp.info/files/imglnks/usimg/f/f6/IMSLP304916-PMLP01595-dso20131116-002-beethoven-symphony6-mvtI.mp3"),
         audioBox(
             "Awakening",
-            "image source",
+            "http://s1.1zoom.net/big0/626/Milky_Way_Sky_Stars_Crag_442823.jpg",
             "audio source"
         ),
         audioBox(

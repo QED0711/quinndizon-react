@@ -11,7 +11,8 @@ class EventsPage extends Component {
     }
 
     render(){
-        const content = this.props.state.content;
+        const content = this.props.state.route === "events" ? this.props.state.content : undefined;
+        console.log(content)
         const heading = this.props.state.heading;
         return(
             
