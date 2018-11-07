@@ -1,4 +1,4 @@
-import {experienceBox} from "../js/Tags"
+import {experienceBox, educationBox} from "../js/Tags"
 
 export default {
     route: 'resume',
@@ -28,7 +28,7 @@ export default {
                     "Organized", "Time Management", "Leadership", "Adaptable", "Communication", "Visual Presentation"
                 ]
             },
-            Experience: [
+            experience: [
                 experienceBox(
                     "Graduate Music Theory & Music Technology Instructor",
                     "University of Maryland College Park",
@@ -41,6 +41,14 @@ export default {
                     "2017 - 2018",
                     ["blah one", "blah two"]
                 ),
+            ],
+            education: [
+                educationBox(
+                    "Doctorate of Musical Arts - Composition (ABD)",
+                    "University of Maryland College Park",
+                    "2015 - Present",
+                    ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
+                )
             ]
         },
         programmingContent: {
@@ -52,7 +60,29 @@ export default {
                 personal: [
                     "still a badass"
                 ]
-            }
+            },
+            experience: [
+                experienceBox(
+                    "Craigslist Notifier App",
+                    "Rails Backend with JavaScript Frontend",
+                    "2018",
+                    ["Signup and mailer functionality"]
+                ),
+                experienceBox(
+                    "Comprehensive Exam Study Software",
+                    "University of Maryland College Park",
+                    "2017",
+                    ["Currently used in two courses at UDM"]
+                ),
+            ],
+            education: [
+                educationBox(
+                    "Doctorate of Musical Arts (ABD)",
+                    "University of Maryland College Park",
+                    "2015 - Present",
+                    ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
+                )
+            ]
         }
     }
 }

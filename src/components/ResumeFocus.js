@@ -2,7 +2,7 @@ import React from 'react';
 
 const ResumeFocus = (props) => {
     return(
-        <div id="focus-buttons">
+        <div id="resume-focus">
             <button onClick={props.handleFocusMusic}>Music Focused</button>
             <button onClick={props.handleFocusProgramming}>Programming Focused</button>
             <br />

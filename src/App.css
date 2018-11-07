@@ -99,8 +99,13 @@ nav a{
   "sidebar intro"
   "sidebar experience"
   "sidebar education";
+  grid-column-gap: 1em;
 
   box-shadow: 2px 2px 10px grey;
+
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .sidebar{
@@ -113,9 +118,24 @@ nav a{
 
 .resume-intro{
   grid-area: intro;
-  padding-left: 10px;
 }
 
 .sidebar-section-heading{
   background-color: #00494D;
+}
+
+.experience-box, .education-box{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+#resume-focus{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#resume-focus button{
+  width: 12em;
 }

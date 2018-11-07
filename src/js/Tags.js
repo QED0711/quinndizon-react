@@ -28,3 +28,12 @@ export function experienceBox(title, subtitle, dates, achievements){
         achievements: achievements
     };
 }
+
+export function educationBox(degree, school, dates, awards){
+    return {
+        degree: degree,
+        school: school,
+        dates: dates,
+        awards: awards
+    }
+}
