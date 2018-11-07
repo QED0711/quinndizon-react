@@ -15,6 +15,10 @@ const contentReducer = (state = {}, action) => {
             return EventsContent
         case 'GET_RESUME_CONTENT':
             return ResumeContent
+        case 'SET_RESUME_FOCUS_MUSIC':
+            return Object.assign({}, state, {focus: "music"})
+        case 'SET_RESUME_FOCUS_PROGRAMMING':
+            return Object.assign({}, state, {focus: "programming"})
         case 'GET_CONTACT_CONTENT':
             return ContactContent
         default:

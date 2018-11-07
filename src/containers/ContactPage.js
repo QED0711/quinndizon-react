@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {getContactContent} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
+import EmailForm from '../components/EmailForm';
 
 class ContactPage extends Component {
     componentWillMount(){
@@ -17,6 +18,9 @@ class ContactPage extends Component {
             <section id="content">
                 <div className="content-heading">
                     <SectionBanner heading={heading} />
+                </div>
+                <div className="contact-form">
+                    <EmailForm />
                 </div>
             </section>
         )

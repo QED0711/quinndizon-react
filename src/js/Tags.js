@@ -19,3 +19,12 @@ export function eventBox(title, subtitle, dateTime, location, description, image
         image: image
     }
 }
+
+export function experienceBox(title, subtitle, dates, achievements){
+    return {
+        title: title,
+        subtitle: subtitle,
+        dates: dates,
+        achievements: achievements
+    };
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const EventBox = (props) => {
     const event = props.event;
-    console.log(event)
+    // console.log(event)
     return(
 
         <div className="event-box">

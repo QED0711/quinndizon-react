@@ -14,6 +14,14 @@ export function getResumeContent(){
     return {type: 'GET_RESUME_CONTENT'}
 }
 
+    export function setResumeFocusMusic(){
+        return {type: 'SET_RESUME_FOCUS_MUSIC'} 
+    }
+    
+    export function setResumeFocusProgramming(){
+        return {type: 'SET_RESUME_FOCUS_PROGRAMMING'} 
+    }
+
 export function getContactContent(){
     return {type: 'GET_CONTACT_CONTENT'}
 }
