@@ -5,6 +5,8 @@ const ResumeFocus = (props) => {
         <div id="focus-buttons">
             <button onClick={props.handleFocusMusic}>Music</button>
             <button onClick={props.handleFocusProgramming}>Programming</button>
+            <br />
+            <a href="#" target="_blank">View as PDF</a>
         </div>
     )
 }

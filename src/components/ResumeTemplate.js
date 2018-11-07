@@ -2,11 +2,13 @@ import React from 'react';
 
 const ResumeTemplate = (props) => {
     const content = props.content ? props.content : undefined;
+
     if(content){
+
         const contentFocus = props.focus === "music" ? content.musicContent : content.programmingContent
+
         return(
             <div className="resume-box">
-                <h1>TEST: {contentFocus && contentFocus.intro}</h1>
                 <div className="sidebar">
                     <h3>{content.name}</h3>
                     <h5>{content.title}</h5>
@@ -24,7 +26,17 @@ const ResumeTemplate = (props) => {
                     <div className="sidebar-section">
                         <h4 className="sidebar-section-heading">Relevant Skills</h4>
                         <h5>Professional</h5>
-                        {/* {content.musicContent.map} */}
+                        <ul>
+                            {contentFocus.skills.professional.map((skill, i) => {
+                                return <li key={i}>{skill}</li>
+                            })}
+                        </ul>
+                        <h5>Personal</h5>
+                        <ul>
+                            {contentFocus.skills.personal.map((skill, i) => {
+                                return <li key={i}>{skill}</li>
+                            })}
+                        </ul>
                     </div>
     
                 </div>

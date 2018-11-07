@@ -44,7 +44,15 @@ export default {
             ]
         },
         programmingContent: {
-            intro: "This is the programming intro"
+            intro: "This is the programming intro",
+            skills: {
+                professional: [
+                    "Badass"
+                ],
+                personal: [
+                    "still a badass"
+                ]
+            }
         }
     }
 }
