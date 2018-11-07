@@ -55,7 +55,7 @@ nav a{
 #event-content-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 2em;
 }
 
 .event-box{
@@ -63,7 +63,7 @@ nav a{
   grid-template-columns: 1fr 5fr;
   grid-gap: 5px;
 
-  box-shadow: 2px 2px 25px rgb(146, 146, 146);
+  box-shadow: 2px 2px 10px rgb(146, 146, 146);
   padding: 0.5em;
 }
 
@@ -93,12 +93,14 @@ nav a{
 
 .resume-box{
   display: grid;
-  grid-template-columns: 2fr 10fr;
-  grid-template-rows: 2fr 5fr 5fr;  
+  grid-template-columns: auto 10fr;
+  grid-template-rows: auto 5fr 5fr;  
   grid-template-areas:
-  "sidebar description"
+  "sidebar intro"
   "sidebar experience"
   "sidebar education";
+
+  box-shadow: 2px 2px 10px grey;
 }
 
 .sidebar{
@@ -106,6 +108,12 @@ nav a{
   background-color: #05595E; 
 
   color: white;
+  padding: 0 1em;
+}
+
+.resume-intro{
+  grid-area: intro;
+  padding-left: 10px;
 }
 
 .sidebar-section-heading{
