@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WorkTitleBox = (props) => {
+const CompositionTitleBox = (props) => {
     // console.log(props.content)
     const content = props.content
     const style = {
@@ -8,10 +8,12 @@ const WorkTitleBox = (props) => {
         backgroundImage: `url(${content.imgSrc})`,
     }
     return(
-        <div className="work-title-box" style={style}>
-            <h4>{content.title}</h4>
+        <div className="composition-title-box" style={style}>
+            <div className="composition-title-box-overlay">
+                <h4>{content.title}</h4>
+            </div>
         </div>
     )
 }
 
-export default WorkTitleBox;
+export default CompositionTitleBox;
