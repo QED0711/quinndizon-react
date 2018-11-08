@@ -20,7 +20,7 @@ const EmailForm = () => {
     // }
 
     return(
-        <form action="https://formspree.io/qdizon@gmail.com" method="POST">
+        <form action="https://formspree.io/qdizon%40gmail%2ecom" method="POST">
             
             <label for="name">Your Name:</label><br />
             <input type="text" id="name" name="name" required/><br />

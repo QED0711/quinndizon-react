@@ -11,6 +11,10 @@ const contentReducer = (state = {}, action) => {
             return HomeContent;
         case 'GET_LISTEN_CONTENT':
             return ListenContent;
+        case 'SET_CURRENT_COMPOSITION':
+            const newState = Object.assign({}, state, action.payload) 
+            console.log(newState)
+            return newState
         case 'GET_EVENTS_CONTENT':
             return EventsContent
         case 'GET_RESUME_CONTENT':

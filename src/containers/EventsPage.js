@@ -5,8 +5,10 @@ import {getEventsContent} from '../actions/content';
 
 import SectionBanner from '../components/sectionBanner'
 import EventBox from '../components/EventBox';
+
 class EventsPage extends Component {
-    componentWillMount(){
+    constructor(props){
+        super(props)
         this.props.updateContent();
     }
 
@@ -35,7 +37,9 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-    return{updateContent: () => dispatch(getEventsContent())};
+    return{
+        updateContent: () => dispatch(getEventsContent()),
+    };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventsPage);

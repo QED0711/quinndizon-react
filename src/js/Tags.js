@@ -1,11 +1,12 @@
 
 
 
-export function audioBox(title, imgSrc, audioSrc, options = {}){
+export function audioBox(title, imgSrc, audioSrc, scoreSrc, options = {}){
     return {
         imgSrc : imgSrc,
         title : title,
-        audioSrc : audioSrc
+        audioSrc : audioSrc,
+        scoreSrc : scoreSrc
     }
 }
 
