@@ -7,11 +7,11 @@ const ResumeExperienceBox = (props) => {
     return(
         <div className="experience-box">
             <div className="experience-box-dates">
-                <h4>{experienceBox.dates}</h4>
+                <h5>{experienceBox.dates}</h5>
             </div>
             <div className="experience-box-info">
-                <h3>{experienceBox.title}</h3>
-                <h5>{experienceBox.subtitle}</h5>
+                <h3 className="experience-title">{experienceBox.title}</h3>
+                <h5 className="experience-subtitle">{experienceBox.subtitle}</h5>
                 <ul>
                     {experienceBox.achievements.map((a, i) => <li key={i}>{a}</li>)}
                 </ul>

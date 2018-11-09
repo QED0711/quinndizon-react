@@ -11,8 +11,6 @@ export default {
         name: "QUINN DIZON",
         title: "Composer, Conductor, Programmer",
         contact: {
-            address: "3102 Babashaw Court Fairfax, VA 22031",
-            phone: "(707) 318-4536",
             email: "qdizon@gmail.com",
             linkedin: "https://www.linkedin.com/in/quinn-dizon/",
             website: "quinndizon.com",
@@ -48,7 +46,25 @@ export default {
                     "University of Maryland College Park",
                     "2015 - Present",
                     ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
-                )
+                ),
+                educationBox(
+                    "Masters in Music Performance - Orchestral Conducting",
+                    "university of Louisville",
+                    "2013-2015",
+                    ["Assistant conductor for the university Symphony Orchestra and University Opera programs"]
+                ),
+                educationBox(
+                    "Masters in Music - Composition",
+                    "university of Louisville",
+                    "2011-2013",
+                    ["Bomhard Composition Fellow - Fully paid fellowship with a focus on writing music for voice"]
+                ),
+                educationBox(
+                    "Bachelor's of Music - Theory and Composition",
+                    "College of Wooster",
+                    "2007-2011",
+                    []
+                ),
             ]
         },
         programmingContent: {

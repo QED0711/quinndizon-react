@@ -7,7 +7,7 @@ const ResumeEducationBox = (props) => {
     return(
         <div className="education-box">
             <div className="education-box-dates">
-                <h4>{education.dates}</h4>
+                <h5>{education.dates}</h5>
             </div>
             <div className="education-box-info">
                 <h3>{education.degree}</h3>

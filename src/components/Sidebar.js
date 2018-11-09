@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Sidebar = (props) => {
     
@@ -10,28 +11,25 @@ const Sidebar = (props) => {
         <h3>{content.name}</h3>
         <h5>{content.title}</h5>
         <div id="personal-info" className="sidebar-section">
-            <h4 className="sidebar-section-heading">Personal Information</h4>
-            <h5>Address</h5>
-            <p>{content.contact.address}</p>
+            <h4 className="sidebar-section-heading">Contact Information</h4>
             <h5>Email</h5>
             <p>{content.contact.email}</p>
-            <h5>Phone</h5>
-            <p>{content.contact.phone}</p>
-            <h5>Website</h5>
-            <p>{content.contact.website}</p>
+            <h5>Online</h5>
+            <Link to="/"><p>quinndizon.com</p></Link>
+            <a href={content.contact.linkedin} target="_blank"><p>linkedin</p></a>
         </div>
         <div className="sidebar-section">
             <h4 className="sidebar-section-heading">Relevant Skills</h4>
             <h5>Professional</h5>
             <ul>
                 {contentFocus.skills.professional.map((skill, i) => {
-                    return <li key={i}>{skill}</li>
+                    return <li key={i}><p>{skill}</p></li>
                 })}
             </ul>
             <h5>Personal</h5>
             <ul>
                 {contentFocus.skills.personal.map((skill, i) => {
-                    return <li key={i}>{skill}</li>
+                    return <li key={i}><p>{skill}</p></li>
                 })}
             </ul>
         </div>
