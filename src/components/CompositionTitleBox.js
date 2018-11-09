@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link } from "react-router-dom";
 
 const CompositionTitleBox = (props) => {
     const content = props.content
@@ -6,10 +7,12 @@ const CompositionTitleBox = (props) => {
         backgroundImage: `url(${content.imgSrc})`,
     }
     return(
-        <div className="composition-title-box" style={style} onClick={props.handleCompositionClick(content)}>
-            <div className="composition-title-box-overlay">
-                <h4>{content.title}</h4>
-            </div>
+        <div className="composition-title-box" style={style}>
+            <Link to={`/listen/${content.title.toLowerCase().split(' ').join("-")}`} >
+                <div className="composition-title-box-overlay">
+                    <h2>{content.title}</h2>
+                </div>
+            </Link>
         </div>
     )
 }

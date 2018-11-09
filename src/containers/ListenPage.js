@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import { Route } from "react-router-dom";
+// import { Route, Link } from "react-router-dom";
 
 import {getListenContent, setCurrentComposition} from '../actions/content'
 
@@ -22,11 +22,23 @@ class ListenPage extends Component {
         }
     }
 
+    findCompositionByTitle = (title) => {
+        if(title){
+            return this.props.state.content.filter(composition => {
+                if(composition.title){
+                    return composition.title.toLowerCase().split(' ').join("-") === title;
+                }
+            })
+        }
+    }
+
     render(){
         const content = this.props.state.route === "listen" ? this.props.state.content.map((c, i) => <CompositionTitleBox key={i} content={c} handleCompositionClick={this.handleCompositionClick}/>) : {};
         const heading = this.props.state.heading;
-        const currentComposition = this.props.state.currentComposition;
-        // const currentComposition = 
+        // const currentComposition = this.props.state.currentComposition;
+        const compositionPath = this.findCompositionByTitle(this.props.match.params.title) 
+        const currentComposition = compositionPath ? compositionPath[0] : this.props.state.currentComposition
+        console.log(compositionPath)
         return(
             <section id="content">
                 <div className="content-heading">
@@ -38,8 +50,6 @@ class ListenPage extends Component {
                 <div id="current-composition">
                     {currentComposition && <CompositionDisplayBox currentComposition={currentComposition} />}
                 </div>
-                {console.log(this.props.match)}
-                <Route path={`${this.props.match.path}/:id`} render={console.log("rendered")} />
             </section>
         )
     }

@@ -25,7 +25,8 @@ class App extends Component {
           <Navigation />
 
           <Route path="/" exact component={HomePage} />
-          <Route path="/listen" component={ListenPage} />
+          <Route path="/listen" exact component={ListenPage} />
+          <Route path="/listen/:title" component={ListenPage} />
           <Route path="/events" exact component={EventsPage} />
           <Route path="/resume" exact component={ResumePage} />
           <Route path="/contact" exact component={ContactPage} />

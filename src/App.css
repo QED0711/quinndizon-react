@@ -37,7 +37,6 @@ nav a{
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .composition-title-box-overlay{
@@ -47,14 +46,10 @@ nav a{
   border-radius: 2px;
 }
 
-
-/* .composition-title-box h4{
-  
-  height: 30px;
-  width: 65%;
-  margin: 0 auto;
-  border-radius: 4px;
-} */
+.composition-title-box a{
+  text-decoration: none;
+  color: white;
+}
 
 #listen-content-grid{
   display: grid;
@@ -62,11 +57,7 @@ nav a{
   grid-gap: 10px;
 }
 
-#event-content-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em;
-}
+
 
 .composition-display-box{
   text-align: center;
@@ -78,6 +69,12 @@ nav a{
   max-height: 1200px;
   margin-top: 10px;
   border:none;
+}
+
+#event-content-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
 }
 
 .event-box{

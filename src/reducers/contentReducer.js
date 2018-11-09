@@ -11,8 +11,8 @@ const contentReducer = (state = {}, action) => {
             return HomeContent;
         case 'GET_LISTEN_CONTENT':
             return ListenContent;
-        case 'SET_CURRENT_COMPOSITION':
-            return Object.assign({}, state, action.payload); 
+        // case 'SET_CURRENT_COMPOSITION':
+            // return Object.assign({}, state, action.payload); 
         case 'GET_EVENTS_CONTENT':
             return EventsContent
         case 'GET_RESUME_CONTENT':

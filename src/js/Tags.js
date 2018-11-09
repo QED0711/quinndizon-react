@@ -1,12 +1,12 @@
 
 import React from "react";
 
-export function compositionBox(title, imgSrc, audioSrc, scoreSrc, options = {}){
+export function compositionBox(title, imgSrc, audio, score, options = {}){
     return {
         imgSrc : imgSrc,
         title : title,
-        audioSrc : audioSrc,
-        scoreSrc : scoreSrc
+        audio : audio,
+        score : score
     }
 }
 
