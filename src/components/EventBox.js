@@ -8,7 +8,7 @@ const EventBox = (props) => {
         <div className="event-box">
 
             <div className="event-image">
-                <img src={event.image} alt={`${event.title} image`} />
+                <img src={event.image} alt={`${event.title}`} />
             </div>
 
             <div className="event-info">

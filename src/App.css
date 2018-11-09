@@ -68,6 +68,18 @@ nav a{
   grid-gap: 2em;
 }
 
+.composition-display-box{
+  text-align: center;
+}
+
+.score-frame{
+  width: 100%;
+  min-height: 50em;
+  max-height: 1200px;
+  margin-top: 10px;
+  border:none;
+}
+
 .event-box{
   display: grid;
   grid-template-columns: 1fr 5fr;

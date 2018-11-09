@@ -5,7 +5,7 @@ import {getHomeContent} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
 
-import {TextBlock} from '../components/ContentBoxes';
+// import {TextBlock} from '../components/ContentBoxes';
 
 class HomePage extends Component {
     constructor(props){

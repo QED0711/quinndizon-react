@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
-import {getListenContent} from '../actions/content'
+import {getListenContent, setCurrentComposition} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
 import CompositionTitleBox from '../components/CompositionTitleBox'
+import CompositionDisplayBox from '../components/CompositionDisplayBox'
 
 class ListenPage extends Component {
     constructor(props){
@@ -23,6 +24,8 @@ class ListenPage extends Component {
     render(){
         const content = this.props.state.route === "listen" ? this.props.state.content.map((c, i) => <CompositionTitleBox key={i} content={c} handleCompositionClick={this.handleCompositionClick}/>) : {};
         const heading = this.props.state.heading;
+        const currentComposition = this.props.state.currentComposition;
+        // const currentComposition = 
         return(
             <section id="content">
                 <div className="content-heading">
@@ -30,6 +33,9 @@ class ListenPage extends Component {
                 </div>
                 <div id="listen-content-grid">
                     {Array.isArray(content) && content}
+                </div>
+                <div id="current-composition">
+                    {currentComposition && <CompositionDisplayBox currentComposition={currentComposition} />}
                 </div>
             </section>
         )
@@ -43,14 +49,7 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
     return {
         updateContent: () => dispatch(getListenContent()),
-        setCurrentComposition: (composition) => dispatch({
-            type: "SET_CURRENT_COMPOSITION", 
-            payload: {
-                currentCompositionTitle: composition.title,
-                currentCompositionScore: composition.scoreSrc,
-                currentCompositionAudio: composition.audioSrc
-            }
-        })
+        setCurrentComposition: (composition) => dispatch(setCurrentComposition(composition))
     };
   }
 

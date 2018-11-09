@@ -22,16 +22,16 @@ const EmailForm = () => {
     return(
         <form action="https://formspree.io/qdizon%40gmail%2ecom" method="POST">
             
-            <label for="name">Your Name:</label><br />
+            <label htmlFor="name">Your Name:</label><br />
             <input type="text" id="name" name="name" required/><br />
             
-            <label for="reply-to">Your Email Address:</label><br />
+            <label htmlFor="reply-to">Your Email Address:</label><br />
             <input type="email" id="reply-to" name="reply-to" required/><br />
 
-            <label for="subject">Subject:</label><br />
+            <label htmlFor="subject">Subject:</label><br />
             <input type="text" id="subject" name="subject"/><br />
 
-            <label for="message-body">Your Message:</label><br />
+            <label htmlFor="message-body">Your Message:</label><br />
             <textarea id="message-body" name="message-body"></textarea><br />
 
             <input type="submit" value="Send Message"/>
