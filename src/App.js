@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './App.css';
+import './css/App.css';
+import './css/Listen.css'
+import './css/Events.css'
+import './css/Resume.css'
+import './css/Contact.css'
+
 
 import LandingBox from './components/LandingBox'
 import Navigation from './components/Navigation'

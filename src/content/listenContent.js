@@ -23,7 +23,7 @@ export default {
         ),
         compositionBox(
             "12 Haiku",
-            "image source",
+            "https://image.shutterstock.com/image-vector/mountain-fuji-spring-oriental-cherry-260nw-354308282.jpg",
             "audio source",
             "Score Source"
         ),

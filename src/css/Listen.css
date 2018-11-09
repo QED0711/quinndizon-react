@@ -1,0 +1,52 @@
+.composition-title-box{
+    text-align: center;
+    border-radius: 2px;
+    padding: 0;
+    /* border: 1px solid black; */
+    box-shadow: 4px 4px 20px 2px rgb(204, 204, 204);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .composition-title-box-overlay{
+    background-color: rgba(127, 127, 127, 0.50);
+    height: 100%;
+    padding: 50px;
+    border-radius: 2px;
+  }
+  
+  .composition-title-box a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #listen-content-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
+  }
+  
+  @media only screen and (max-width: 1200px){
+    #listen-content-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 900px){
+    #listen-content-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .composition-display-box{
+    text-align: center;
+  }
+  
+  .score-frame{
+    width: 100%;
+    min-height: 50em;
+    max-height: 1200px;
+    margin-top: 10px;
+    border:none;
+  }
