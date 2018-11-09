@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import { Route } from "react-router-dom";
 
 import {getListenContent, setCurrentComposition} from '../actions/content'
 
@@ -37,6 +38,8 @@ class ListenPage extends Component {
                 <div id="current-composition">
                     {currentComposition && <CompositionDisplayBox currentComposition={currentComposition} />}
                 </div>
+                {console.log(this.props.match)}
+                <Route path={`${this.props.match.path}/:id`} render={console.log("rendered")} />
             </section>
         )
     }
