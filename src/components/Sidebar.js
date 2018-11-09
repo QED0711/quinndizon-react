@@ -8,8 +8,8 @@ const Sidebar = (props) => {
     
     return(
     <div className="sidebar">
-        <h3>{content.name}</h3>
-        <h5>{content.title}</h5>
+        <h2 id="resume-name">{content.name}</h2>
+        <h5 id="resume-title">{content.title}</h5>
         <div id="personal-info" className="sidebar-section">
             <h4 className="sidebar-section-heading">Contact Information</h4>
             <h5>Email</h5>
@@ -21,17 +21,17 @@ const Sidebar = (props) => {
         <div className="sidebar-section">
             <h4 className="sidebar-section-heading">Relevant Skills</h4>
             <h5>Professional</h5>
-            <ul>
+            
                 {contentFocus.skills.professional.map((skill, i) => {
-                    return <li key={i}><p>{skill}</p></li>
+                    return <p key={i}>{skill}</p>
                 })}
-            </ul>
+            
             <h5>Personal</h5>
-            <ul>
+            
                 {contentFocus.skills.personal.map((skill, i) => {
-                    return <li key={i}><p>{skill}</p></li>
+                    return <p key={i}>{skill}</p>
                 })}
-            </ul>
+            
         </div>
 
     </div>        

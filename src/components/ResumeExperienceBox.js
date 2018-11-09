@@ -11,10 +11,10 @@ const ResumeExperienceBox = (props) => {
             </div>
             <div className="experience-box-info">
                 <h3 className="experience-title">{experienceBox.title}</h3>
-                <h5 className="experience-subtitle">{experienceBox.subtitle}</h5>
-                <ul>
-                    {experienceBox.achievements.map((a, i) => <li key={i}>{a}</li>)}
-                </ul>
+                <h4 className="experience-subtitle">{experienceBox.subtitle}</h4>
+                
+                {experienceBox.achievements.map((a, i) => <p key={i}>{a}</p>)}
+                
             </div>
         </div>
     );

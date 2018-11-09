@@ -11,6 +11,7 @@ const ResumeEducationBox = (props) => {
             </div>
             <div className="education-box-info">
                 <h3>{education.degree}</h3>
+                <h4 className="education-school">{education.school}</h4>
             </div>
         </div>
     )

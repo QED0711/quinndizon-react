@@ -48,7 +48,7 @@ export default {
                     ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
                 ),
                 educationBox(
-                    "Masters in Music Performance - Orchestral Conducting",
+                    "Masters in Music - Orchestral Conducting",
                     "university of Louisville",
                     "2013-2015",
                     ["Assistant conductor for the university Symphony Orchestra and University Opera programs"]
@@ -71,10 +71,10 @@ export default {
             intro: "This is the programming intro",
             skills: {
                 professional: [
-                    "Badass"
+                    "Javascript", "Node", "React", "Ruby", "Rails", "Git", "Linux"
                 ],
                 personal: [
-                    "still a badass"
+                    "Organized", "Time Management", "Leadership", "Adaptable", "Communication", "Visual Presentation"
                 ]
             },
             experience: [
