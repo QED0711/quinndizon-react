@@ -1,11 +1,17 @@
+body{
+  background-color: whitesmoke;
+}
+
 #landing-box{
   margin: 0 auto;
   width: 85%;
+  max-width: 1350px;
 }
 
 nav{
   text-align: center;
-  max-width: 85%;
+  width: 85%;
+  max-width: 1350px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr) ;
@@ -15,6 +21,7 @@ nav{
 
 #content{
   width: 85%;
+  max-width: 1350px;
   margin: 0 auto;
 
   border: 1px solid rgb(180, 180, 180);
