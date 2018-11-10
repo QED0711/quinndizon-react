@@ -83,6 +83,10 @@
   margin: 0;
 }
 
+.experience-box-info, .education-box-info{
+  margin-bottom: .65em;
+}
+
 .experience-subtitle{
   margin-left: 1em;
   font-weight: 500;

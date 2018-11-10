@@ -7,7 +7,8 @@ export function compositionBox(title, subtitle, imgSrc, audio, score, options = 
         title : title,
         subtitle : subtitle,
         audio : audio,
-        score : score
+        score : score,
+        options: options
     }
 }
 
