@@ -30,7 +30,7 @@ export default {
             "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "audio source",
             "Score Source",
-            {backgroundPositionY: "-450px"}
+            {backgroundPositionY: "-200px"}
         ),
         compositionBox(
             "Concertante",
