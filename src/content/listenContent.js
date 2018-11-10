@@ -26,7 +26,7 @@ export default {
         ),
         compositionBox(
             "12 Haiku",
-            "for chamber orchestra",
+            "an orchestral song cycle",
             "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "audio source",
             "Score Source",
@@ -39,7 +39,34 @@ export default {
             soundcloudFrame(239482583),
             "Score Source",
             {backgroundPositionY: "-700px"}
-        )
+        ),
+        compositionBox(
+            "String Qurartet No. 1",
+            "with live electronics",
+            "https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&h=350",
+            soundcloudFrame(303732634),
+            scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPvVEtMRVRuQ1BWN1U/preview"),
+            {backgroundPositionY: "-40px"}
+        ),
+        compositionBox(
+            "Grace",
+            "for orchestra & chorus",
+            "https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=350",
+            soundcloudFrame(223523435),
+            scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPvV2swRU15QzVvWlk/preview"),
+            {backgroundPositionY: "-150px"}
+        ),
+        compositionBox(
+            "Prelude",
+            "for solo cello",
+            "https://images.pexels.com/photos/261184/pexels-photo-261184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            soundcloudFrame(223397328),
+            scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPvWmRBa3NGM1BEMXc/preview"),
+            {backgroundPositionY: "-150px"}
+        ),
     ]
 }
+
+
+
 
