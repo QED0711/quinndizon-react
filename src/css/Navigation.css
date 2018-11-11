@@ -1,0 +1,67 @@
+nav, .mobile-nav-container{
+    width: 85%;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+nav{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-gap: 2em;
+}
+  
+  #mobile-nav-icon{
+    display: none;
+    text-align: left;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png");
+    background-size: 100% 100%;
+    height: 1.5em;
+    width: 1.5em;
+    max-width: 1350px;
+
+}
+
+#mobile-menu-false, #mobile-menu-true{
+    display: none;
+}
+  
+@media only screen and (max-width: 750px){
+    nav{
+        display: none;
+    }
+    #mobile-nav-icon{
+        display: block;
+    }
+
+    #mobile-menu-true{
+        display: block;
+    }
+}
+
+
+
+
+.mobile-nav-container{
+    margin-bottom: .65em;
+}
+
+.mobile-menu-item{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    width: auto;
+    margin: .1em auto;
+    padding: .5em;
+    text-align: center;
+    font-weight: 600;
+    /* letter-spacing: .5em; */
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menue-item:hover{
+    background-color: white;
+
+}
+

@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './css/App.css';
+import './css/Navigation.css';
 import './css/Listen.css'
 import './css/Events.css'
 import './css/Resume.css'

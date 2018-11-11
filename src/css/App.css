@@ -2,32 +2,12 @@ body{
   background-color: whitesmoke;
 }
 
-#landing-box, nav, #current-nav, #content{
+#landing-box, #content{
   width: 85%;
   max-width: 1350px;
   margin: 0 auto;
 }
 
-nav{
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) ;
-  grid-gap: 2em;
-}
-
-#current-nav{
-  display: none;
-  text-align: center;
-}
-
-@media only screen and (max-width: 750px){
-  nav{
-    display: none;
-  }
-  #current-nav{
-    display: block;
-  }
-}
 
 
 #content{
