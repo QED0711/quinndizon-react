@@ -23,11 +23,13 @@ import ContactPage from './containers/ContactPage';
 class App extends Component {
   
   render() {
+    const route = this.props.state.route
+    // console.log(route)
     return (
       <Router>
         <div>
           <LandingBox />
-          <Navigation />
+          <Navigation route={route}/>
 
           <Route path="/" exact component={HomePage} />
           <Route path="/listen" exact component={ListenPage} />

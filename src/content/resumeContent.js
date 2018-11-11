@@ -49,13 +49,13 @@ export default {
                 ),
                 educationBox(
                     "Masters in Music - Orchestral Conducting",
-                    "university of Louisville",
+                    "University of Louisville",
                     "2013-2015",
                     ["Assistant conductor for the university Symphony Orchestra and University Opera programs"]
                 ),
                 educationBox(
                     "Masters in Music - Composition",
-                    "university of Louisville",
+                    "University of Louisville",
                     "2011-2013",
                     ["Bomhard Composition Fellow - Fully paid fellowship with a focus on writing music for voice"]
                 ),
