@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './css/App.css';
+import './css/prevLanding.css';
+import './css/LandingBox.css';
 import './css/Navigation.css';
 import './css/Listen.css'
 import './css/Events.css'
@@ -10,7 +12,8 @@ import './css/Resume.css'
 import './css/Contact.css'
 
 
-import LandingBox from './components/LandingBox'
+// import LandingBox from './components/LandingBox'
+import Landing from './components/prevLanding'
 import Navigation from './components/Navigation'
 
 
@@ -29,7 +32,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <LandingBox />
+          {/* <LandingBox /> */}
+          <Landing />
           <Navigation route={route}/>
 
           <Route path="/" exact component={HomePage} />

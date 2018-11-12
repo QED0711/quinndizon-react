@@ -1,0 +1,26 @@
+#landing-box{
+
+
+
+    width: 85%;
+    max-width: 1350px;
+    margin: 1em auto 0;
+
+    border-radius: 4px;
+}
+
+
+
+#site-image{
+    background-color: black;
+    background-image: url("http://quinndizon.com/assets/img/WebsiteMainPage%20cropped.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30em;
+}
+
+
+#site-title{
+    color: white;
+}
+

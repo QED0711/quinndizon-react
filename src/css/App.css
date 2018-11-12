@@ -2,7 +2,7 @@ body{
   background-color: whitesmoke;
 }
 
-#landing-box, #content{
+#content{
   width: 85%;
   max-width: 1350px;
   margin: 0 auto;
@@ -15,6 +15,10 @@ body{
   border: 1px solid rgb(180, 180, 180);
   border-radius: 4px;
   padding: 0 1em 1em;
+}
+
+#section-banner{
+  text-align: center;
 }
 
 
