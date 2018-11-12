@@ -31,7 +31,7 @@ class Navigation extends Component {
                     <Link to="/"><h2>Home</h2></Link> 
                     <Link to="/listen"><h2>Listen</h2></Link>
                     <Link to="/events"><h2>Events</h2></Link>
-                    <Link to="/resume"><h2>Resume</h2></Link>
+                    <Link to="/resume/music"><h2>Resume</h2></Link>
                     <Link to="/contact"><h2>Contact</h2></Link>
                 </nav>
                 <div className="mobile-nav-container">
@@ -40,7 +40,7 @@ class Navigation extends Component {
                       <Link className="mobile-menu-item" to="/">Home</Link>
                       <Link className="mobile-menu-item" to="/listen">Listen</Link>
                       <Link className="mobile-menu-item" to="/events">Events</Link>
-                      <Link className="mobile-menu-item" to="/resume">Resume</Link>
+                      <Link className="mobile-menu-item" to="/resume/music">Resume</Link>
                       <Link className="mobile-menu-item" to="/contact">Contact</Link>
                     </div>
                 </div>

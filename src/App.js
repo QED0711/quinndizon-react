@@ -36,7 +36,8 @@ class App extends Component {
           <Route path="/listen" exact component={ListenPage} />
           <Route path="/listen/:title" component={ListenPage} />
           <Route path="/events" exact component={EventsPage} />
-          <Route path="/resume" exact component={ResumePage} />
+          {/* <Route path="/resume" component={ResumePage} /> */}
+          <Route path="/resume/:focus" exact component={ResumePage} />
           <Route path="/contact" exact component={ContactPage} />
         </div>
       </Router>

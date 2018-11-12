@@ -1,10 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ResumeFocus = (props) => {
+    const musicFocus = props.focus === 'music';
     return(
         <div id="resume-focus">
-            <button onClick={props.handleFocusMusic}>Music Focused</button>
-            <button onClick={props.handleFocusProgramming}>Programming Focused</button>
+            <div className="resume-toggle-links">
+                <Link to="/resume/music" className={`focus-${musicFocus}`} >Music Focus</Link>
+                <Link to="/resume/programming" className={`focus-${!musicFocus}`}>Programming Focus</Link>
+            </div>
             <br />
             <a href="#" target="_blank">View as PDF</a>
         </div>

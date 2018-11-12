@@ -35,7 +35,6 @@ class ListenPage extends Component {
     render(){
         const content = this.props.state.route === "listen" ? this.props.state.content.map((c, i) => <CompositionTitleBox key={i} content={c} handleCompositionClick={this.handleCompositionClick}/>) : {};
         const heading = this.props.state.heading;
-        // const currentComposition = this.props.state.currentComposition;
         const compositionPath = this.findCompositionByTitle(this.props.match.params.title) 
         const currentComposition = compositionPath ? compositionPath[0] : this.props.state.currentComposition
         console.log(compositionPath)
