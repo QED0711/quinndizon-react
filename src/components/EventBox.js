@@ -12,9 +12,9 @@ const EventBox = (props) => {
             </div>
 
             <div className="event-info">
-                <h4>{event.title}</h4>
-                <h5>{event.dateTime}</h5>
-                <h5>{event.location}</h5>
+                <h3>{event.title}</h3>
+                <h4>{event.dateTime}</h4>
+                <h4>{event.location}</h4>
                 <hr />
                 <p>{event.description}</p>
             </div>
