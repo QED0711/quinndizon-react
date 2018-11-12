@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     const contentFocus = props.contentFocus;
     
     return(
-    <div className="sidebar">
+    <div className={`sidebar sidebar-${props.focus}`}>
         <h2 id="resume-name">{content.name}</h2>
         <h5 id="resume-title">{content.title}</h5>
         <div id="personal-info" className="sidebar-section">
@@ -19,14 +19,14 @@ const Sidebar = (props) => {
             <a href={content.contact.linkedin} target="_blank"><p>linkedin</p></a>
         </div>
         <div className="sidebar-section">
-            <h4 className="sidebar-section-heading">Relevant Skills</h4>
-            <h5>Professional</h5>
+            <h4 className="sidebar-section-heading">Skills {props.focus === 'programming' ? "& Technologies" : ""}</h4>
+            <h5>{props.focus === 'music' ? "Professional" : "Technologies"}</h5>
             
                 {contentFocus.skills.professional.map((skill, i) => {
                     return <p key={i}>{skill}</p>
                 })}
             
-            <h5>Personal</h5>
+            <h5>Interpersonal</h5>
             
                 {contentFocus.skills.personal.map((skill, i) => {
                     return <p key={i}>{skill}</p>

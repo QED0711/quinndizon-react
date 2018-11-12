@@ -1,3 +1,11 @@
+:root{
+  
+  --music-light: #05595E;
+  --music-dark: #00494D;
+  --programming-light: #6A1A1A;
+  --programming-dark: #540404;
+}
+
 .resume-box{
   display: grid;
   grid-template-columns: auto 10fr;
@@ -49,17 +57,32 @@
 
 .sidebar{
   grid-area: sidebar;
-  background-color: #05595E; 
+  
 
   color: white;
-  padding: 0 1em;
+  padding: 0 1em .65em;;
 }
 
 .sidebar-section-heading{
-  background-color: #00494D;
   margin-top: .65em;
   padding-left: 0.2em;
   padding-bottom: .15em;
+}
+
+.sidebar-music{
+  background-color: var(--music-light); 
+}
+
+.sidebar-music .sidebar-section-heading{
+  background-color: var(--music-dark);
+}
+
+.sidebar-programming{
+  background-color: var(--programming-light); 
+}
+
+.sidebar-programming .sidebar-section-heading{
+  background-color: var(--programming-dark); 
 }
 
 .sidebar h5{
@@ -117,6 +140,14 @@
   font-weight: 500;
 }
 
+.section-title-music{
+  background-color: var(--music-dark);
+}
+
+.section-title-programming{
+  background-color: var(--programming-dark);
+}
+
 #resume-focus{
   width: 100%;
   margin: 0 auto;
@@ -159,5 +190,13 @@
 
 .focus-false{
   color: black;
+}
+
+.focus-music-true{
+  background-color: var(--music-light);  
+}
+
+.focus-programming-true{
+  background-color: var(--programming-light);
 }
   
