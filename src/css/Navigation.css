@@ -45,12 +45,12 @@ nav a:hover{
 
 #mobile-nav-icon{
     display: none;
-    text-align: left;
     background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png");
     background-size: 100% 100%;
     height: 1.5em;
     width: 1.5em;
     max-width: 1350px;
+    margin: .65em auto;
 
 }
 
