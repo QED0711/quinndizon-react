@@ -10,8 +10,10 @@ class CompositionDisplayBox extends Component{
         return(
             <div className="composition-display-box">
                 <div className="composition-display-heading" style={style}>
-                    <h3 className="composition-title">{this.props.currentComposition.title}</h3>
-                    <h5 className="composition-subtitle">{this.props.currentComposition.subtitle}</h5>
+                    <div className="composition-display-box-overlay">
+                        <h3 className="composition-title">{this.props.currentComposition.title}</h3>
+                        <h5 className="composition-subtitle">{this.props.currentComposition.subtitle}</h5>
+                    </div>
                 </div>
                 {this.props.currentComposition.audio}
                 {this.props.currentComposition.score}
