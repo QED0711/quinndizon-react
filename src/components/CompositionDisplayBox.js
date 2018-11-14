@@ -1,23 +1,23 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-const CompositionDisplayBox = (props) => {
-    const style = Object.assign({
-        backgroundImage: `url(${props.currentComposition.imgSrc})`
-    }, props.currentComposition.options)
-    // const style = {
-    //     backgroundImage: `url(${props.currentComposition.imgSrc})`
-    // }
-    console.log(props)
-    return(
-        <div className="composition-display-box">
-            <div className="composition-display-heading" style={style}>
-                <h3 className="composition-title">{props.currentComposition.title}</h3>
-                <h5 className="composition-subtitle">{props.currentComposition.subtitle}</h5>
+class CompositionDisplayBox extends Component{
+    
+    render(){
+        const style = Object.assign({
+            backgroundImage: `url(${this.props.currentComposition.imgSrc})`
+        }, this.props.currentComposition.options)
+        
+        return(
+            <div className="composition-display-box">
+                <div className="composition-display-heading" style={style}>
+                    <h3 className="composition-title">{this.props.currentComposition.title}</h3>
+                    <h5 className="composition-subtitle">{this.props.currentComposition.subtitle}</h5>
+                </div>
+                {this.props.currentComposition.audio}
+                {this.props.currentComposition.score}
             </div>
-            {props.currentComposition.audio}
-            {props.currentComposition.score}
-        </div>
-    )
+        )
+    }
 }
 
 

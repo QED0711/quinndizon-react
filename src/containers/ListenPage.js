@@ -32,12 +32,18 @@ class ListenPage extends Component {
         }
     }
 
+    componentDidUpdate(){
+        if(document.getElementsByClassName("composition-display-heading")[0]){
+            document.getElementsByClassName("composition-display-heading")[0].scrollIntoView();
+        }
+    }
+
     render(){
         const content = this.props.state.route === "listen" ? this.props.state.content.map((c, i) => <CompositionTitleBox key={i} content={c} handleCompositionClick={this.handleCompositionClick}/>) : {};
         const heading = this.props.state.heading;
         const compositionPath = this.findCompositionByTitle(this.props.match.params.title) 
+
         const currentComposition = compositionPath ? compositionPath[0] : this.props.state.currentComposition
-        console.log(compositionPath)
         return(
             <section id="content">
                 <div className="content-heading">
