@@ -1,23 +1,35 @@
 
 .about-content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 10fr 2fr;
     grid-template-areas: 
-    "bio bio headshot"
-    "bio bio bio"
-    "bio bio bio";
+    "bio headshot";
+    grid-gap: 2em;
 }
 
 .headshot{
     grid-area: headshot;
-}
+    width: 250px;
+    height: 366px;
 
-.headshot img{
-    max-width: 300px;
-    max-height: 300px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    box-shadow: .5em .5em 2em rgba(0,0,0,.5);
 }
 
 .bio{
     grid-area: bio;
+}
+
+@media only screen and (max-width: 920px){
+    .about-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "bio"
+        "headshot";
+    }
+
 }
