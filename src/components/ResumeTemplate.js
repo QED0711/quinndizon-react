@@ -12,6 +12,12 @@ const ResumeTemplate = (props) => {
 
         return(
             <div className="resume-box">
+                <div className={`main-title main-title-${props.focus}`}>
+                    <div className="main-title-align">
+                        <h2 id="resume-name">{content.name}</h2>
+                        <h5 id="resume-title">{content.title}</h5>
+                    </div>
+                </div>            
                 <Sidebar content={content} focus={props.focus} contentFocus={contentFocus}/>
                 <div className="main-section resume-intro">
                     <p>{contentFocus.intro}</p>

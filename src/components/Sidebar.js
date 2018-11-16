@@ -8,8 +8,7 @@ const Sidebar = (props) => {
     
     return(
     <div className={`sidebar sidebar-${props.focus}`}>
-        <h2 id="resume-name">{content.name}</h2>
-        <h5 id="resume-title">{content.title}</h5>
+
         <div id="personal-info" className="sidebar-section">
             <h4 className="sidebar-section-heading">Contact Information</h4>
             <h5>Email</h5>

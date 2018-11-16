@@ -12,7 +12,7 @@
   grid-template-rows: repeat(3, auto);
   /* grid-template-rows: fit-content(5%);   */
   grid-template-areas:
-  "sidebar intro"
+  "sidebar-title intro"
   "sidebar main"
   "sidebar main";
   grid-column-gap: 1em;
@@ -27,12 +27,15 @@
 @media only screen and (max-width: 700px){
   .resume-box{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-    "sidebar"
+    "sidebar-title"
     "intro"
+    "sidebar"
     "main"
   }
+
+
 }
 
 .resume-box *{ 
@@ -45,6 +48,30 @@
 
 .resume-box li{
   list-style-type: none;
+}
+
+.main-title{
+  grid-area: sidebar-title;
+  /* position: relative; */
+  padding: 1em;
+  transform-style: preserve-3d;
+}
+
+.main-title-music{
+  background-color: var(--music-light);
+}
+
+.main-title-programming{
+  background-color: var(--programming-light);
+}
+
+.main-title-align{
+  position: relative;
+  bottom: -20%;
+  transform: translateY(-50%);
+
+  text-align: center;
+  color: white;
 }
 
 #resume-name{
@@ -62,6 +89,8 @@
   color: white;
   padding: 0 1em .65em;;
 }
+
+
 
 .sidebar-section-heading{
   margin-top: .65em;
@@ -100,6 +129,10 @@
   color: white;
 }
 
+.main-body{
+  grid-area: main;
+}
+
 .main-section{
   margin-bottom: .65em;
 }
@@ -133,7 +166,8 @@
 }
 
 .section-title{
-  margin-bottom: 1em;
+  margin: .33em 0 1em;
+  
   background-color: #05595E;
   color: white;
   padding: 0 0 .2em .65em;
