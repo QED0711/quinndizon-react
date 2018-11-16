@@ -1,0 +1,23 @@
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "bio bio headshot"
+    "bio bio bio"
+    "bio bio bio";
+}
+
+.headshot{
+    grid-area: headshot;
+}
+
+.headshot img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.bio{
+    grid-area: bio;
+}

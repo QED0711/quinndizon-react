@@ -4,6 +4,8 @@ import {connect} from 'react-redux';
 import {getHomeContent} from '../actions/content'
 
 import SectionBanner from '../components/sectionBanner'
+// import MainImage from "../content/MainImage.jpg";
+import headshot from '../content/headshot.jpg';
 
 // import {TextBlock} from '../components/ContentBoxes';
 
@@ -21,7 +23,14 @@ class HomePage extends Component {
                 <div className="content-heading">
                     <SectionBanner heading={heading} />
                 </div>
-                    {Array.isArray(content) && content.map((text, i) => <p key={i}>{text}</p>)}
+                <div className="about-content">
+                    {/* <div className="headshot">
+                        <img src={headshot} alt="Quinn Dizon headshot"/>
+                    </div> */}
+                    <div className="bio">
+                        {Array.isArray(content) && content.map((text, i) => <p key={i}>{text}</p>)}
+                    </div>
+                </div>
             </section>
         )
     }
