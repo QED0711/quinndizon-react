@@ -1,18 +1,21 @@
 
 .about-content{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 10fr 2fr;
     grid-template-areas: 
     "bio headshot";
-    grid-gap: 2em;
+    grid-gap: 2em; */
+    padding: 0 5em;
 }
 
 .headshot{
-    grid-area: headshot;
-    width: 250px;
-    height: 366px;
+    /* grid-area: headshot; */
+    float: left;
+    width: 150px;
+    height: 225px;
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 0 1em 0 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
