@@ -10,7 +10,7 @@ const ResumeFocus = (props) => {
                 <Link to="/resume/programming" className={`focus-${!musicFocus} focus-programming-${!musicFocus}`}>Programming Focus</Link>
             </div>
             <br />
-            <a href="#" target="_blank">View as PDF</a>
+            {/* <a href="#" target="_blank">View as PDF</a> */}
         </div>
     )
 }

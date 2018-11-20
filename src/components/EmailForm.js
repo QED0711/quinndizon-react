@@ -35,6 +35,7 @@ const EmailForm = () => {
             <textarea id="message-body" name="message-body"></textarea><br />
 
             <input type="submit" value="Send Message"/>
+            <p style={{margin: 0}}>powered by <em>Formspree</em></p>
         </form>
     )
 
