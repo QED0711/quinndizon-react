@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import ResumeExperienceBox from './ResumeExperienceBox';
 import ResumeEducationBox from './ResumeEducationBox';
+import ResumeAwardsBox from './ResumeAwardsBox';
 
 const ResumeTemplate = (props) => {
     const content = props.content ? props.content : undefined;
@@ -31,6 +32,14 @@ const ResumeTemplate = (props) => {
                             })
                         }       
                     </div>
+                    {
+                        props.focus === 'music' &&
+                            <div className="main-section resume-education">
+                                <h2 className={`section-title section-title-${props.focus}`}>Honors & Awards</h2>
+                                {contentFocus.awards.map((awardsBox, i) => <ResumeAwardsBox awardsBox={awardsBox} />)}
+                            </div>
+                        
+                    }
                     <div className="main-section resume-education">
                         <h2 className={`section-title section-title-${props.focus}`}>Education</h2>
                         {

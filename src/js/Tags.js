@@ -52,3 +52,11 @@ export function educationBox(degree, school, dates, awards){
         awards: awards
     }
 }
+
+export function awardsBox(title, subtitle, info){
+    return {
+        title: title,
+        subtitle: subtitle,
+        info: info
+    }
+}

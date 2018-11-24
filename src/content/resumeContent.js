@@ -1,4 +1,4 @@
-import {experienceBox, educationBox} from "../js/Tags"
+import {experienceBox, educationBox, awardsBox} from "../js/Tags"
 
 export default {
     route: 'resume',
@@ -28,12 +28,12 @@ export default {
             },
             experience: [
                 experienceBox(
-                    "Graduate Music Theory & Music Technology Instructor",
+                    "Music Theory & Music Technology Instructor",
                     "University of Maryland College Park",
                     "2016 - Present",
                     [
                         "- Created course outlines, objectives and lesson plans for full academic years", 
-                        "- Evaluated student growth, and generate strategies to meet department goals",
+                        "- Evaluated student growth, and implemented strategies to meet department goals",
                         "- Course topics included tonal harmony and melody, composition, notation software, concepts of digital audio, and digital audio workstations"
                     ]
                 ),
@@ -53,15 +53,20 @@ export default {
                     "Santa Rosa Symphony Summer Academy",
                     "2015 - 2017",
                     [
-                        "Instructor of Composition & Conducting Level 1"
+                        "- Daily class lectures for young musicans, aged 9 - 12, for 3 weeks",
+                        "- Topics included elements of composition, form, basic analysis, sight singing, and simple dication",
+                        "- Course culminated in individual composition presentations and performances with students conducting their own works"
                     ]
                 ),
                 experienceBox(
-                    "Conductor, Composer",
+                    "Conductor & Featured Composer",
                     "Thompson Streeet Opera Companay",
                     "2013 - 2015",
                     [
-                        "Principal multiple concerts over three seasons"
+                        "- Principal conductor for three concerts over three seasons" ,
+                        "- Conducted the World and Kentucky premieres of 5 operas", 
+                        "- Duties included running music and staging rehearsals, sectionals, and corrdinating equipment loans and transportation", 
+                        "- Featured composer during the 2015 Bomhard Showcase Concert for my work, Where the Foremost Flag Was Flying"
                     ]
                 ),
             ],
@@ -89,6 +94,13 @@ export default {
                     "College of Wooster",
                     "2007-2011",
                     []
+                ),
+            ],
+            awards: [
+                awardsBox(
+                    "Flagship Fellow",
+                    "University of Maryland",
+                    "fully funded, competative fellowship"
                 ),
             ]
         },

@@ -151,6 +151,10 @@
   margin: 0;
 }
 
+.experience-box p{
+  margin-left: 1.5em;
+}
+
 .experience-box-info, .education-box-info{
   margin-bottom: .65em;
 }
