@@ -9,7 +9,7 @@ const ResumeAwards = (props) => {
     return(
         <div className="main-section resume-education">
             <h2 className={`section-title section-title-${focus}`}>Honors & Awards</h2>
-            {contentFocus.awards.map((awardsBox, i) => <ResumeAwardsBox awardsBox={awardsBox} />)}
+            {contentFocus.awards.map((awardsBox, i) => <ResumeAwardsBox key={i} awardsBox={awardsBox} />)}
         </div>
     )
 

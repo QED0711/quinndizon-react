@@ -130,26 +130,50 @@ export default {
             experience: [
                 projectBox(
                     "Craigslist Notifier App",
-                    "website", // website
-                    "", // GH repo
+                    "http://qed-clnotifier.herokuapp.com/", // website
+                    "https://github.com/QED0711/craigslist-notifier", // GH repo
                     "2018",
                     ["Signup and mailer functionality"]
                 ),
                 projectBox(
                     "Comprehensive Exam Study Tool",
-                    "", // website
-                    "", // GH repo
+                    "https://qed0711.github.io/scorestudy/", // website
+                    "https://github.com/QED0711/scorestudy", // GH repo
                     "2017",
                     ["JS ajax frontend application"]
                 ),
             ],
             education: [
                 educationBox(
+                    "Flatiron Community Bootcamp",
+                    "Flatiron School",
+                    "2018",
+                    []
+                ),
+                educationBox(
                     "Doctorate of Musical Arts (ABD)",
                     "University of Maryland College Park",
                     "2015 - Present",
                     ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
-                )
+                ),
+                educationBox(
+                    "Masters in Music - Orchestral Conducting",
+                    "University of Louisville",
+                    "2013-2015",
+                    ["Assistant conductor for the university Symphony Orchestra and University Opera programs"]
+                ),
+                educationBox(
+                    "Masters in Music - Composition",
+                    "University of Louisville",
+                    "2011-2013",
+                    ["Bomhard Composition Fellow - Fully paid fellowship with a focus on writing music for voice"]
+                ),
+                educationBox(
+                    "Bachelor's of Music - Theory and Composition",
+                    "College of Wooster",
+                    "2007-2011",
+                    []
+                ),
             ]
         }
     }

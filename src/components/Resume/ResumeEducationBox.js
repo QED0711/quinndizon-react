@@ -2,7 +2,6 @@ import React from 'react'
 
 const ResumeEducationBox = (props) => {
     const education = props.education
-    console.log(props)
 
     return(
         <div className="education-box">

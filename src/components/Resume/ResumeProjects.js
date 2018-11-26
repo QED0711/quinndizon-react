@@ -8,10 +8,9 @@ const ResumeProjects = (props) => {
 
     return(
         <div className="main-section resume-experience">
-            <h2 className={`section-title section-title-${focus}`}>Experience</h2>
+            <h2 className={`section-title section-title-${focus}`}>Projects</h2>
             {
                 contentFocus.experience.map((project, i) => {
-                    console.log("PROJECT::: ", project)
                     return <ResumeProjectBox key={i} project={project}/>
                 })
             }       
