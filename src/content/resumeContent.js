@@ -1,4 +1,4 @@
-import {experienceBox, educationBox, awardsBox} from "../js/Tags"
+import {experienceBox, educationBox, awardsBox, projectBox} from "../js/Tags"
 
 export default {
     route: 'resume',
@@ -99,8 +99,21 @@ export default {
             awards: [
                 awardsBox(
                     "Flagship Fellow",
-                    "University of Maryland",
+                    "University of Maryland College Park",
+                    "2015 - Present",
                     "fully funded, competative fellowship"
+                ),
+                awardsBox(
+                    "Walsum Prize - First Place",
+                    "For Dark Nebula",
+                    "2018",
+                    "$1000 monetary prize and performance of winning work, Dark Nebula, by the UMD Wind Orchestra"
+                ),
+                awardsBox(
+                    "PARMA Student Composer Grand Prize Winner",
+                    "For Awakening for Piano Quartet",
+                    "2012",
+                    "Winning work, Awakening, recorded and released on the Navona Label"
                 ),
             ]
         },
@@ -115,17 +128,19 @@ export default {
                 ]
             },
             experience: [
-                experienceBox(
+                projectBox(
                     "Craigslist Notifier App",
-                    "Rails Backend with JavaScript Frontend",
+                    "website", // website
+                    "", // GH repo
                     "2018",
                     ["Signup and mailer functionality"]
                 ),
-                experienceBox(
-                    "Comprehensive Exam Study Software",
-                    "University of Maryland College Park",
+                projectBox(
+                    "Comprehensive Exam Study Tool",
+                    "", // website
+                    "", // GH repo
                     "2017",
-                    ["Currently used in two courses at UDM"]
+                    ["JS ajax frontend application"]
                 ),
             ],
             education: [

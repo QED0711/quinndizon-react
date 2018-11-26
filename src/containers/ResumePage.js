@@ -5,7 +5,9 @@ import {getResumeContent, setResumeFocusMusic, setResumeFocusProgramming} from '
 
 import SectionBanner from '../components/sectionBanner'
 import ResumeFocus from '../components/ResumeFocus';
-import ResumeTemplate from '../components/ResumeTemplate'
+// import ResumeTemplate from '../components/ResumeTemplate'
+import ResumeTemplateMusic from '../components/ResumeTemplateMusic'
+import ResumeTemplateProgramming from '../components/ResumeTemplateProgramming'
 
 class Resume extends Component {
     constructor(props){
@@ -29,7 +31,9 @@ class Resume extends Component {
                     <ResumeFocus focus={focus} />
                 </div>
                 <div className="resume-content">
-                    <ResumeTemplate content={content} focus={focus} />
+                    {
+                        focus === 'music' ? <ResumeTemplateMusic content={content} focus={focus}/> : <ResumeTemplateProgramming content={content} focus={focus}/> 
+                    }
                 </div>
             </section>
         )

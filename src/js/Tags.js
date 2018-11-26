@@ -44,6 +44,16 @@ export function experienceBox(title, subtitle, dates, achievements){
     };
 }
 
+export function projectBox(title, website, github, dates, info){
+    return {
+        title: title,
+        website: website,
+        github: github,
+        dates: dates,
+        info: info
+    };
+}
+
 export function educationBox(degree, school, dates, awards){
     return {
         degree: degree,
@@ -53,10 +63,11 @@ export function educationBox(degree, school, dates, awards){
     }
 }
 
-export function awardsBox(title, subtitle, info){
+export function awardsBox(title, subtitle, dates, info){
     return {
         title: title,
         subtitle: subtitle,
+        dates: dates,
         info: info
     }
 }

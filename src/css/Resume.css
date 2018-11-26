@@ -141,17 +141,17 @@
   grid-area: intro;
 }
 
-.experience-box, .education-box{
+.experience-box, .education-box, .awards-box{
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-gap: 1em;
 }
 
-.experience-box *, .education-box *{
+.experience-box *, .education-box *, .awards-box *{
   margin: 0;
 }
 
-.experience-box p{
+.experience-box p, .awards-box p{
   margin-left: 1.5em;
 }
 
@@ -159,7 +159,7 @@
   margin-bottom: .65em;
 }
 
-.experience-subtitle{
+.experience-subtitle, .awards-subtitle{
   margin-left: 1em;
   font-weight: 500;
 }

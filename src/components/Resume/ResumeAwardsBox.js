@@ -8,9 +8,9 @@ const ResumeAwardsBox = (props) => {
         <div className="awards-box-dates">
             <h5>{award.dates}</h5>
         </div>
-        <div className="award-box-info">
+        <div className="awards-box-info">
             <h3>{award.title}</h3>
-            <h4 className="award-school">{award.subtitle}</h4>
+            <h4 className="awards-subtitle">{award.subtitle}</h4>
             <p>{award.info}</p>
         </div>
     </div>
