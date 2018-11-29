@@ -1,4 +1,4 @@
-import {experienceBox, educationBox, awardsBox, projectBox} from "../js/Tags"
+import {experienceBox, educationBox, awardsBox, projectBox, skillBox, technologyBox, interpersonalBox} from "../js/Tags"
 
 export default {
     route: 'resume',
@@ -20,10 +20,30 @@ export default {
             intro: "Classically trained musician with two graduate degrees and 7+ years professional experience in composition, conducting, music education and technology, and arts management. Seeking a role that utilizes my interpersonal and leadership skills, and my love of all things music.",
             skills: {
                 professional: [
-                    "Composition", "Arranging & Engraving", "Conducting", "Audio Recording & Editing", "Programming"
+                    skillBox(
+                        "Composition",
+                        "15+ years"
+                    ),
+                    skillBox(
+                        "Arranging & Engraving",
+                        "12+ years"
+                    ),
+                    skillBox(
+                        "Conducting",
+                        "9+ years"
+                    ),
+                    skillBox(
+                        "Audio Recording & Editing",
+                        "5+ years"
+                    ),
+                    skillBox(
+                        "Programming",
+                        "5+ years"
+                    ),
+                    // "Composition", "Arranging & Engraving", "Conducting", "Audio Recording & Editing", "Programming"
                 ],
                 personal: [
-                    "Organized", "Time Management", "Leadership", "Adaptable", "Communication", "Visual Presentation"
+                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Visual Presentation"
                 ]
             },
             experience: [
@@ -125,13 +145,33 @@ export default {
             ]
         },
         programmingContent: {
-            intro: "This is the programming intro",
+            intro: "programming intro",
             skills: {
                 professional: [
-                    "Javascript", "Node", "React", "Ruby", "Rails", "Git", "Linux"
+                    technologyBox(
+                        "Javascript",
+                        ["React + Redux", "Node + npm", "Express", "Jquery + Ajax"]
+                    ),
+                    technologyBox(
+                        "Ruby",
+                        ["Rails", "Sinatra", "Active Record"]
+                    ),
+                    technologyBox(
+                        "HTML + CSS",
+                        ["Bootstrap", "SCSS"]
+                    ),
+                    technologyBox(
+                        "Git",
+                        ["Github", "GH-Pages"]
+                    ),
+                    technologyBox(
+                        "Heroku",
+                        ["Heroku CLI + Deployment"]
+                    ),
+                    // "Javascript", "Node", "React", "Ruby", "Rails", "Git", "Linux"
                 ],
                 personal: [
-                    "Organized", "Time Management", "Leadership", "Adaptable", "Communication", "Visual Presentation"
+                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Visual Presentation"
                 ]
             },
             experience: [

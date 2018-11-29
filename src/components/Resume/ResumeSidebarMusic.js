@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+import SkillsBox from './SkillsBox';
+import InterpersonalBox from './InterpersonalBox';
+
 const ResumeSidebarMusic = (props) => {
     
     const content = props.content;
@@ -17,20 +20,24 @@ const ResumeSidebarMusic = (props) => {
             <Link to="/"><p>quinndizon.com</p></Link>
             <a href={content.contact.linkedin} target="_blank"><p>linkedin</p></a>
         </div>
+
         <div className="sidebar-section">
-            <h4 className="sidebar-section-heading">Skills {props.focus === 'programming' ? "& Technologies" : ""}</h4>
-            <h5>{props.focus === 'music' ? "Professional" : "Technologies"}</h5>
+            <h4 className="sidebar-section-heading">Skills</h4>
+            <hr/>
+            <h4>Professional</h4>
+            <hr/>
             
                 {contentFocus.skills.professional.map((skill, i) => {
-                    return <p key={i}>{skill}</p>
+                    return <SkillsBox key={i} skill={skill} />
                 })}
             
-            <h5>Interpersonal</h5>
+            <hr/>
+            <h4>Interpersonal</h4>
+            <hr/>
             
                 {contentFocus.skills.personal.map((skill, i) => {
-                    return <p key={i}>{skill}</p>
+                    return <InterpersonalBox key={i} skill={skill} />
                 })}
-            
         </div>
 
     </div>        

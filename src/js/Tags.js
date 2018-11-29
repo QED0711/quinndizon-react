@@ -35,6 +35,27 @@ export function eventBox(title, subtitle, dateTime, location, description, image
     }
 }
 
+export function skillBox(skill, info){
+    return {
+        skill: skill,
+        info: info
+    };
+}
+
+export function technologyBox(tech, subItems){
+    return {
+        tech: tech,
+        subItems: subItems
+    };
+}
+
+export function InterpersonalBox(skill, description){
+    return {
+        skill: skill,
+        description: description
+    };
+}
+
 export function experienceBox(title, subtitle, dates, achievements){
     return {
         title: title,

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+import TechnologyBox from './TechnologyBox';
+import InterpersonalBox from './InterpersonalBox'
 const ResumeSidebarProgramming = (props) => {
     
     const content = props.content;
@@ -19,17 +21,19 @@ const ResumeSidebarProgramming = (props) => {
         </div>
         <div className="sidebar-section">
             <h4 className="sidebar-section-heading">Skills {props.focus === 'programming' ? "& Technologies" : ""}</h4>
-            <h5>{props.focus === 'music' ? "Professional" : "Technologies"}</h5>
-            
-                {contentFocus.skills.professional.map((skill, i) => {
-                    return <p key={i}>{skill}</p>
+            <hr/>
+            <h4>Technologies</h4>
+            <hr/>
+                {contentFocus.skills.professional.map((tech, i) => {
+                    return <TechnologyBox key={i} tech={tech} />
                 })}
             
-            <h5>Interpersonal</h5>
-            
-                {contentFocus.skills.personal.map((skill, i) => {
-                    return <p key={i}>{skill}</p>
-                })}
+            <hr/>
+            <h4>Soft Skills</h4>
+            <hr/>
+            {contentFocus.skills.personal.map((skill, i) => {
+                return <InterpersonalBox key={i} skill={skill} />
+            })}
             
         </div>
 
