@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const Sidebar = (props) => {
+const ResumeSidebarMusic = (props) => {
     
     const content = props.content;
     const contentFocus = props.contentFocus;
@@ -37,4 +37,4 @@ const Sidebar = (props) => {
     )
 }
 
-export default Sidebar;
+export default ResumeSidebarMusic;

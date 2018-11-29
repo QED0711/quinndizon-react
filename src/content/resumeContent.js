@@ -32,6 +32,7 @@ export default {
                     "University of Maryland College Park",
                     "2016 - Present",
                     [
+                        "- Courses: Aural Skills Music Theory I-IV, Lecture Music Theory I-II, Concepts of Music Technology, Fundamentals of Music",
                         "- Created course outlines, objectives and lesson plans for full academic years", 
                         "- Evaluated student growth, and implemented strategies to meet department goals",
                         "- Course topics included tonal harmony and melody, composition, notation software, concepts of digital audio, and digital audio workstations"
@@ -101,19 +102,25 @@ export default {
                     "Flagship Fellow",
                     "University of Maryland College Park",
                     "2015 - Present",
-                    "fully funded, competative fellowship"
+                    "Fully funded, highly competative fellowship awarded to only 10 incoming doctoral students across all diciplines on campus."
                 ),
                 awardsBox(
                     "Walsum Prize - First Place",
                     "For Dark Nebula",
                     "2018",
-                    "$1000 monetary prize and performance of winning work, Dark Nebula, by the UMD Wind Orchestra"
+                    "$1000 monetary prize and performance of winning work, Dark Nebula, by the UMD Wind Orchestra."
                 ),
                 awardsBox(
                     "PARMA Student Composer Grand Prize Winner",
                     "For Awakening for Piano Quartet",
                     "2012",
-                    "Winning work, Awakening, recorded and released on the Navona Label"
+                    "Winning work, Awakening, recorded by PARMA Recordings and released on the Navona Label."
+                ),
+                awardsBox(
+                    "Bomhard Fellow",
+                    "University of Louisville",
+                    "2011 - 2013",
+                    "Compeative fellowship, awarded to promising incoming composition MM students who show aptitude for writing for voice."
                 ),
             ]
         },
@@ -129,18 +136,36 @@ export default {
             },
             experience: [
                 projectBox(
+                    "Personal Website",
+                    "http://quinndizon.com", // website
+                    "", // GH repo
+                    "2018",
+                    ["- React front end website with redux state management"]
+                ),
+                projectBox(
                     "Craigslist Notifier App",
                     "http://qed-clnotifier.herokuapp.com/", // website
                     "https://github.com/QED0711/craigslist-notifier", // GH repo
                     "2018",
-                    ["Signup and mailer functionality"]
+                    ["A rails backend and JS front end application to monitor and notify users about new listings on Craigslist."]
+                ),
+                projectBox(
+                    "Wiki Cluster",
+                    "", // website
+                    "https://github.com/QED0711/wiki_cluster-cli-app", // GH repo
+                    "2018",
+                    [
+                        "- Ruby CLI web scraper to search a wikipedia article and find related topics.",
+                        "- Finds all linked articles from a given wikipedia page",
+                        "- From the linked articles, returns the most frequently linked topics on other wikipedia pages."
+                    ]
                 ),
                 projectBox(
                     "Comprehensive Exam Study Tool",
                     "https://qed0711.github.io/scorestudy/", // website
                     "https://github.com/QED0711/scorestudy", // GH repo
                     "2017",
-                    ["JS ajax frontend application"]
+                    ["- JS ajax frontend application"]
                 ),
             ],
             education: [

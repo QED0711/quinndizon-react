@@ -1,9 +1,10 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
 import ResumeIntro from './Resume/ResumeIntro';
 import ResumeTitleBox from './Resume/ResumeTitleBox';
-import ResumeEducation from './Resume/ResumeEducation';
+import ResumeSidebarProgramming from './Resume/ResumeSidebarProgramming';
 import ResumeProjects from './Resume/ResumeProjects';
+import ResumeInterests from './Resume/ResumeInterests';
+import ResumeEducation from './Resume/ResumeEducation';
 
 const ResumeTemplateProgramming = (props) => {
     const content = props.content ? props.content : undefined;  
@@ -15,23 +16,15 @@ const ResumeTemplateProgramming = (props) => {
         return(
             <div className="resume-box">
                 <ResumeTitleBox focus={props.focus} content={content} />       
-                <Sidebar content={content} focus={props.focus} contentFocus={contentFocus}/>
+                <ResumeSidebarProgramming content={content} focus={props.focus} contentFocus={contentFocus}/>
                 <ResumeIntro contentFocus={contentFocus} />
 
                 <div className="main-body">
 
                     <ResumeProjects contentFocus={contentFocus} focus={props.focus} />
-
-
+                    <ResumeInterests contentFocus={contentFocus} focus={props.focus} />
                     <ResumeEducation contentFocus={contentFocus} focus={props.focus} />
-                    {/* <div className="main-section resume-education">
-                        <h2 className={`section-title section-title-programming`}>Education</h2>
-                        {
-                            contentFocus.education.map((ed, i) => {
-                                return <ResumeEducationBox key={i} education={ed} />
-                            })
-                        }
-                    </div> */}
+
                 </div>
             </div>
         );

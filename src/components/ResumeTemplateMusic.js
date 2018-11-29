@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Sidebar from '../components/Sidebar';
 import ResumeIntro from './Resume/ResumeIntro';
 import ResumeTitleBox from './Resume/ResumeTitleBox';
+import ResumeSidebarMusic from './Resume/ResumeSidebarMusic';
 import ResumeEducation from './Resume/ResumeEducation';
 import ResumeExperience from './Resume/ResumeExperience';
 import ResumeAwards from './Resume/ResumeAwards';
@@ -18,7 +18,7 @@ const ResumeTemplateMusic = (props) => {
             <div className="resume-box">
                 <ResumeTitleBox focus={props.focus} content={content} />
 
-                <Sidebar content={content} focus={props.focus} contentFocus={contentFocus}/>
+                <ResumeSidebarMusic content={content} focus={props.focus} contentFocus={contentFocus}/>
                 <ResumeIntro contentFocus={contentFocus} />
                 
                 <div className="main-body">
