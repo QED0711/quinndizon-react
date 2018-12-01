@@ -17,7 +17,7 @@ export default {
         },
         references: "References available on request",
         musicContent: {
-            intro: "Classically trained musician with two graduate degrees and 7+ years professional experience in composition, conducting, music education and technology, and arts management. Seeking a role that utilizes my interpersonal and leadership skills, and my love of all things music.",
+            intro: "I'm a classically trained musician with two graduate degrees and 7+ years professional experience in composition, conducting, music education and technology, and arts management. Bottom line, I love to tinker, play, and create in whatever midium that best suits my needs. When Im not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
             skills: {
                 professional: [
                     skillBox(
@@ -43,7 +43,7 @@ export default {
                     // "Composition", "Arranging & Engraving", "Conducting", "Audio Recording & Editing", "Programming"
                 ],
                 personal: [
-                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Visual Presentation"
+                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Strong Visual Presentation"
                 ]
             },
             experience: [
@@ -140,12 +140,12 @@ export default {
                     "Bomhard Fellow",
                     "University of Louisville",
                     "2011 - 2013",
-                    "Compeative fellowship, awarded to promising incoming composition MM students who show aptitude for writing for voice."
+                    "Competative fellowship, awarded to promising incoming composition MM students who show aptitude for writing for voice."
                 ),
             ]
         },
         programmingContent: {
-            intro: "programming intro",
+            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I got my start writing small application in Max MSP, and then gradually transitioned to web development so I could more easily share my creations with a larger audience. Bottom line, I love to tinker, play, and create in whatever midium that best suits my needs. When Im not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
             skills: {
                 professional: [
                     technologyBox(
@@ -161,17 +161,21 @@ export default {
                         ["Bootstrap", "SCSS"]
                     ),
                     technologyBox(
+                        "Databases",
+                        ["SQL: SQL Lite, Posgre SQL", "MongoDB"]
+                    ),
+                    technologyBox(
                         "Git",
                         ["Github", "GH-Pages"]
                     ),
                     technologyBox(
-                        "Heroku",
-                        ["Heroku CLI + Deployment"]
+                        "Deployment",
+                        ["Heroku", "gh-pages"]
                     ),
                     // "Javascript", "Node", "React", "Ruby", "Rails", "Git", "Linux"
                 ],
                 personal: [
-                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Visual Presentation"
+                    "Well organized", "Excellent time management", "Leadership experience", "Work well in groups", "Quickly adaptable", "Communicative", "Strong visual presentation"
                 ]
             },
             experience: [
@@ -180,14 +184,22 @@ export default {
                     "http://quinndizon.com", // website
                     "", // GH repo
                     "2018",
-                    ["- React front end website with redux state management"]
+                    [
+                        "- React front end website with redux state management",
+                        "- Deployed on gh-pages"
+                    ]
                 ),
                 projectBox(
                     "Craigslist Notifier App",
                     "http://qed-clnotifier.herokuapp.com/", // website
                     "https://github.com/QED0711/craigslist-notifier", // GH repo
                     "2018",
-                    ["A rails backend and JS front end application to monitor and notify users about new listings on Craigslist."]
+                    [
+                        "- Rails backend and JS front end application to monitor and notify users about new Craigslist listings",
+                        "- Uses the Delayed Jobs gem to regularly scrape user defined Craigslist listings and sends notifications via action mailer",
+                        "- Notifies users within minutes of new listings without them having to continuously check themselves",
+                        "- Deployed on Heroku"
+                    ]
                 ),
                 projectBox(
                     "Wiki Cluster",
@@ -195,9 +207,9 @@ export default {
                     "https://github.com/QED0711/wiki_cluster-cli-app", // GH repo
                     "2018",
                     [
-                        "- Ruby CLI web scraper to search a wikipedia article and find related topics.",
+                        "- Ruby CLI web scraper to search a wikipedia article and find related topics",
                         "- Finds all linked articles from a given wikipedia page",
-                        "- From the linked articles, returns the most frequently linked topics on other wikipedia pages."
+                        "- From the linked articles, returns the most frequently linked topics on other wikipedia pages"
                     ]
                 ),
                 projectBox(
@@ -205,7 +217,12 @@ export default {
                     "https://qed0711.github.io/scorestudy/", // website
                     "https://github.com/QED0711/scorestudy", // GH repo
                     "2017",
-                    ["- JS ajax frontend application"]
+                    [
+                        "- Interactive JS & ajax frontend application that directs users to random scores on IMSLP.org",
+                        "- Users select a range of composers and genres, and the application produces scores that match the user's selections",
+                        "- Node web scraper updates database",
+                        "- Designed as a study tool for the UMD comprehensive exams. Currently used by students in two courses at UMD"
+                    ]
                 ),
             ],
             education: [

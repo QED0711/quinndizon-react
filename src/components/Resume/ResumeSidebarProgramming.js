@@ -20,7 +20,7 @@ const ResumeSidebarProgramming = (props) => {
             <a href={content.contact.linkedin} target="_blank"><p>linkedin</p></a>
         </div>
         <div className="sidebar-section">
-            <h4 className="sidebar-section-heading">Skills {props.focus === 'programming' ? "& Technologies" : ""}</h4>
+            <h4 className="sidebar-section-heading">Technologies & Skills</h4>
             <hr/>
             <h4>Technologies</h4>
             <hr/>

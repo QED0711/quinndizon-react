@@ -9,7 +9,7 @@ const TechnologyBox = (props) => {
             <p className="skill-main">{tech.tech}</p>
             {
                 tech.subItems.map((subItem, i) => {
-                    return <p className="skill-info">- {subItem}</p>
+                    return <p key={i} className="skill-info">- {subItem}</p>
                 })
             }
             </div>

@@ -24,7 +24,7 @@ const ResumeSidebarMusic = (props) => {
         <div className="sidebar-section">
             <h4 className="sidebar-section-heading">Skills</h4>
             <hr/>
-            <h4>Professional</h4>
+            <h4>Music & Professional</h4>
             <hr/>
             
                 {contentFocus.skills.professional.map((skill, i) => {
