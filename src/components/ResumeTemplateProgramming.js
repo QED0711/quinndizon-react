@@ -22,8 +22,8 @@ const ResumeTemplateProgramming = (props) => {
                 <div className="main-body">
 
                     <ResumeProjects contentFocus={contentFocus} focus={props.focus} />
-                    <ResumeInterests contentFocus={contentFocus} focus={props.focus} />
                     <ResumeEducation contentFocus={contentFocus} focus={props.focus} />
+                    <ResumeInterests contentFocus={contentFocus} focus={props.focus} />
 
                 </div>
             </div>

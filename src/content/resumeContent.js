@@ -1,4 +1,4 @@
-import {experienceBox, educationBox, awardsBox, projectBox, skillBox, technologyBox, interpersonalBox} from "../js/Tags"
+import {experienceBox, educationBox, awardsBox, projectBox, skillBox, technologyBox, interpersonalBox, interestBox} from "../js/Tags"
 
 export default {
     route: 'resume',
@@ -162,7 +162,7 @@ export default {
                     ),
                     technologyBox(
                         "Databases",
-                        ["SQL: SQL Lite, Posgre SQL", "MongoDB"]
+                        ["SQL", "MongoDB"]
                     ),
                     technologyBox(
                         "Version Control",
@@ -223,6 +223,24 @@ export default {
                         "- Node web scraper updates database",
                         "- Designed as a study tool for the UMD comprehensive exams. Currently used by students in two courses at UMD"
                     ]
+                ),
+            ],
+            interests: [
+                interestBox(
+                    "Music Composition & Engraving",
+                    ["Writing music is about creativity and practicality. Making the notation both functional and visually appealing is always an interesting problem to tackle."]
+                ),
+                interestBox(
+                    "Conducting",
+                    ["Music is a team sport. It's a privilege to work with other musicians and pull something unique and exciting out of a piece of music."]
+                ),
+                interestBox(
+                    "Audio Recording, Editing, & Mastering",
+                    ["Working with audio is about attention to the smallest detail. It may take hours to get something sounding just right, but I love every minute of it."]
+                ),
+                interestBox(
+                    "Teaching",
+                    ["I have found teaching not only to be a rewarding experience, but one of the best ways to keep learning."]
                 ),
             ],
             education: [

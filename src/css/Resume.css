@@ -24,19 +24,7 @@
   padding: .75em
 }
 
-@media only screen and (max-width: 700px){
-  .resume-box{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "sidebar-title"
-    "intro"
-    "sidebar"
-    "main"
-  }
 
-
-}
 
 .resume-box *{ 
   margin: 0;
@@ -85,12 +73,9 @@
 .sidebar{
   grid-area: sidebar;
   
-
   color: white;
   padding: 0 1em .65em;;
 }
-
-
 
 .sidebar-section-heading{
   margin-top: .65em;
@@ -159,6 +144,25 @@
 
 .experience-box *, .education-box *, .awards-box *{
   margin: 0;
+}
+
+.resume-interest-boxes{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2em;
+}
+
+@media only screen and (max-width: 1350px){
+  .resume-interest-boxes{
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .resume-interest-boxes{
+    grid-template-columns: repeat(1, auto);
+    grid-gap: .5em;
+  }
 }
 
 .experience-box p, .awards-box p{
@@ -247,4 +251,26 @@
 .focus-programming-true{
   background-color: var(--programming-light);
 }
-  
+
+@media only screen and (max-width: 1000px){
+  .resume-box{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "sidebar-title"
+    "intro"
+    "sidebar"
+    "main"
+  }
+
+  .sidebar{
+    padding: 0 15% 1em;
+  }
+
+}
+
+@media only screen and (max-width: 575px){
+  .sidebar{
+    padding: 0 .5em 1em;
+  }
+}

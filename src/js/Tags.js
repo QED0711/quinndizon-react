@@ -75,6 +75,13 @@ export function projectBox(title, website, github, dates, info){
     };
 }
 
+export function interestBox(title, info){
+    return {
+        title: title,
+        info: info
+    };
+}
+
 export function educationBox(degree, school, dates, awards){
     return {
         degree: degree,
