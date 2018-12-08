@@ -145,7 +145,7 @@ export default {
             ]
         },
         programmingContent: {
-            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I got my start writing small application in Max MSP, and then gradually transitioned to web development so I could more easily share my creations with a larger audience. Bottom line, I love to tinker, play, and create in whatever midium that best suits my needs. When Im not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
+            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to web development so I could more easily share my creations with a larger audience. Bottom line, I love to tinker, play, and create in whatever midium that best suits my needs. When Im not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
             skills: {
                 professional: [
                     technologyBox(
@@ -165,8 +165,8 @@ export default {
                         ["SQL: SQL Lite, Posgre SQL", "MongoDB"]
                     ),
                     technologyBox(
-                        "Git",
-                        ["Github", "GH-Pages"]
+                        "Version Control",
+                        ["Git + Github"]
                     ),
                     technologyBox(
                         "Deployment",

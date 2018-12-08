@@ -22,7 +22,7 @@ const ResumeSidebarProgramming = (props) => {
         <div className="sidebar-section">
             <h4 className="sidebar-section-heading">Technologies & Skills</h4>
             <hr/>
-            <h4>Technologies</h4>
+            <h4>Technologies & Languages</h4>
             <hr/>
                 {contentFocus.skills.professional.map((tech, i) => {
                     return <TechnologyBox key={i} tech={tech} />
