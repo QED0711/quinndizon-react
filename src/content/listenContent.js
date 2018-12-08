@@ -10,13 +10,21 @@ export default {
     currentComposition: undefined,
     content: [
         compositionBox(
+            "Dark Nebula",
+            "for Wind Orchestra",
+            "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/heic1517a_0.jpg",
+            "Coming ",
+            "Soon",
+            {backgroundPositionY: "10%",}
+        ),
+        compositionBox(
             "Cumulonimbus",
             "for orchestra",
             "https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             soundcloudFrame(223397327),
             scoreFrame("https://drive.google.com/file/d/1LHcdy2Rcc7xCdg-RpGcpdBAuIwE_k-xA/preview"),
             {backgroundPositionY: "-150px",}
-            ),
+        ),
         compositionBox(
             "Awakening",
             "for piano quartet",
@@ -28,8 +36,8 @@ export default {
             "12 Haiku",
             "an orchestral song cycle",
             "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "audio source",
-            "Score Source",
+            "Coming ",
+            "Soon",
             {backgroundPositionY: "-200px"}
         ),
         compositionBox(
@@ -43,10 +51,10 @@ export default {
         compositionBox(
             "String Qurartet No. 1",
             "with live electronics",
-            "https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&h=350",
+            "http://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/29082/large_web.jpg",
             soundcloudFrame(303732634),
             scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPvVEtMRVRuQ1BWN1U/preview"),
-            {backgroundPositionY: "-40px"}
+            {backgroundPositionY: "33%"}
         ),
         compositionBox(
             "Grace",
