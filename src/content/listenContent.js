@@ -13,8 +13,8 @@ export default {
             "Dark Nebula",
             "for Wind Orchestra",
             "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/heic1517a_0.jpg",
-            "Coming ",
-            "Soon",
+            "Audio Coming Soon",
+            scoreFrame("https://drive.google.com/file/d/1a9yL3g9sFoHMdZm2iCqPtG44H_hVAwKy/preview"),
             {backgroundPositionY: "10%",}
         ),
         compositionBox(
@@ -36,8 +36,8 @@ export default {
             "12 Haiku",
             "an orchestral song cycle",
             "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "Coming ",
-            "Soon",
+            "Audio Coming Soon",
+            scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPvamh1UWg4TDdoczA/preview"),
             {backgroundPositionY: "-200px"}
         ),
         compositionBox(
