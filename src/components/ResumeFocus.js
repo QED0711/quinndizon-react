@@ -6,8 +6,8 @@ const ResumeFocus = (props) => {
     return(
         <div id="resume-focus">
             <div className="resume-toggle-links">
-                <Link to="/resume/music" className={`focus-${musicFocus} focus-music-${musicFocus}`} >Music Focus</Link>
-                <Link to="/resume/programming" className={`focus-${!musicFocus} focus-programming-${!musicFocus}`}>Programming Focus</Link>
+                <Link to="/quinndizon-react/resume/music" className={`focus-${musicFocus} focus-music-${musicFocus}`} >Music Focus</Link>
+                <Link to="/quinndizon-react/resume/programming" className={`focus-${!musicFocus} focus-programming-${!musicFocus}`}>Programming Focus</Link>
             </div>
             <br />
             {/* <a href="#" target="_blank">View as PDF</a> */}

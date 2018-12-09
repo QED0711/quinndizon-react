@@ -37,13 +37,13 @@ class App extends Component {
           <Landing />
           <Navigation route={route}/>
 
-          <Route path="/" exact component={HomePage} />
-          <Route path="/listen" exact component={ListenPage} />
-          <Route path="/listen/:title" component={ListenPage} />
-          <Route path="/events" exact component={EventsPage} />
+          <Route path="/quinndizon-react/" exact component={HomePage} />
+          <Route path="/quinndizon-react/listen" exact component={ListenPage} />
+          <Route path="/quinndizon-react/listen/:title" component={ListenPage} />
+          <Route path="/quinndizon-react/events" exact component={EventsPage} />
           {/* <Route path="/resume" component={ResumePage} /> */}
-          <Route path="/resume/:focus" exact component={ResumePage} />
-          <Route path="/contact" exact component={ContactPage} />
+          <Route path="/quinndizon-react/resume/:focus" exact component={ResumePage} />
+          <Route path="/quinndizon-react/contact" exact component={ContactPage} />
         </div>
       </Router>
     );

@@ -9,7 +9,7 @@ const CompositionTitleBox = (props) => {
     }
     return(
         <div className="composition-title-box" style={style}>
-            <Link to={`/listen/${content.title.toLowerCase().split(' ').join("-")}`} >
+            <Link to={`/quinndizon-react/listen/${content.title.toLowerCase().split(' ').join("-")}`} >
                 <div className="composition-title-box-overlay">
                     <h2 className="composition-title">{content.title}</h2>
                     <h5 className="composition-subtitle">{content.subtitle}</h5>
