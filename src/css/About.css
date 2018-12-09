@@ -15,7 +15,7 @@
     height: 23em;
 
     /* margin: 0 auto; */
-    margin: 0 1em 0 0;
+    margin: 0 2em 1em 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -27,12 +27,25 @@
     grid-area: bio;
 }
 
-@media only screen and (max-width: 920px){
+
+@media only screen and (max-width: 1300px){
     .about-content{
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .about-content{
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "bio"
-        "headshot";
+        "headshot"
+        "bio";
+        padding: 0 .25em;
+    }
+
+    .headshot{
+        margin: 0 auto;
     }
 
 }
