@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/quinndizon-react/precache-manifest.a107fb40177c3944f61aad70cf17ce17.js"
+  "/quinndizon-react/precache-manifest.92de69b8323fb2f2c95fc189b8c39600.js"
 );
 
 workbox.clientsClaim();

@@ -1,7 +1,7 @@
 {
   "main.css": "/quinndizon-react/static/css/main.66536621.chunk.css",
-  "main.js": "/quinndizon-react/static/js/main.a634832b.chunk.js",
-  "main.js.map": "/quinndizon-react/static/js/main.a634832b.chunk.js.map",
+  "main.js": "/quinndizon-react/static/js/main.1de97496.chunk.js",
+  "main.js.map": "/quinndizon-react/static/js/main.1de97496.chunk.js.map",
   "static/js/1.b5975168.chunk.js": "/quinndizon-react/static/js/1.b5975168.chunk.js",
   "static/js/1.b5975168.chunk.js.map": "/quinndizon-react/static/js/1.b5975168.chunk.js.map",
   "runtime~main.js": "/quinndizon-react/static/js/runtime~main.90cd797d.js",
@@ -10,6 +10,6 @@
   "static/media/MainImage.jpg": "/quinndizon-react/static/media/MainImage.8629315f.jpg",
   "static/media/headshot.jpg": "/quinndizon-react/static/media/headshot.b96579f4.jpg",
   "index.html": "/quinndizon-react/index.html",
-  "precache-manifest.a107fb40177c3944f61aad70cf17ce17.js": "/quinndizon-react/precache-manifest.a107fb40177c3944f61aad70cf17ce17.js",
+  "precache-manifest.92de69b8323fb2f2c95fc189b8c39600.js": "/quinndizon-react/precache-manifest.92de69b8323fb2f2c95fc189b8c39600.js",
   "service-worker.js": "/quinndizon-react/service-worker.js"
 }
