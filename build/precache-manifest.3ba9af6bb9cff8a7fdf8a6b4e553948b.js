@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/quinndizon-react/static/js/runtime~main.90cd797d.js"
   },
   {
-    "revision": "520cd3631a546c7c0300",
-    "url": "/quinndizon-react/static/js/main.520cd363.chunk.js"
+    "revision": "8044f0fb46280e76b584",
+    "url": "/quinndizon-react/static/js/main.8044f0fb.chunk.js"
   },
   {
     "revision": "b5975168f2c72556df24",
     "url": "/quinndizon-react/static/js/1.b5975168.chunk.js"
   },
   {
-    "revision": "520cd3631a546c7c0300",
+    "revision": "8044f0fb46280e76b584",
     "url": "/quinndizon-react/static/css/main.66536621.chunk.css"
   },
   {
-    "revision": "d58f6d62ab56d35773b2bf9d084ca98c",
+    "revision": "0caef5d8c9b82ee19fa8caf1c1bc3e42",
     "url": "/quinndizon-react/index.html"
   }
 ];

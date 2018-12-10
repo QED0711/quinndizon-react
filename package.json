@@ -2,7 +2,7 @@
   "name": "quinndizon-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://qed0711.github.io/quinndizon-react",
+  "homepage": "http://quinndizon.com",
   "dependencies": {
     "jquery": "^3.3.1",
     "react": "^16.6.0",
