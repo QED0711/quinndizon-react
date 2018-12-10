@@ -1,15 +1,15 @@
 {
-  "main.css": "/quinndizon-react/static/css/main.66536621.chunk.css",
-  "main.js": "/quinndizon-react/static/js/main.8044f0fb.chunk.js",
-  "main.js.map": "/quinndizon-react/static/js/main.8044f0fb.chunk.js.map",
-  "static/js/1.b5975168.chunk.js": "/quinndizon-react/static/js/1.b5975168.chunk.js",
-  "static/js/1.b5975168.chunk.js.map": "/quinndizon-react/static/js/1.b5975168.chunk.js.map",
-  "runtime~main.js": "/quinndizon-react/static/js/runtime~main.90cd797d.js",
-  "runtime~main.js.map": "/quinndizon-react/static/js/runtime~main.90cd797d.js.map",
-  "static/css/main.66536621.chunk.css.map": "/quinndizon-react/static/css/main.66536621.chunk.css.map",
-  "static/media/MainImage.jpg": "/quinndizon-react/static/media/MainImage.8629315f.jpg",
-  "static/media/headshot.jpg": "/quinndizon-react/static/media/headshot.b96579f4.jpg",
-  "index.html": "/quinndizon-react/index.html",
-  "precache-manifest.3ba9af6bb9cff8a7fdf8a6b4e553948b.js": "/quinndizon-react/precache-manifest.3ba9af6bb9cff8a7fdf8a6b4e553948b.js",
-  "service-worker.js": "/quinndizon-react/service-worker.js"
+  "main.css": "/static/css/main.66536621.chunk.css",
+  "main.js": "/static/js/main.79940eb9.chunk.js",
+  "main.js.map": "/static/js/main.79940eb9.chunk.js.map",
+  "static/js/1.b5975168.chunk.js": "/static/js/1.b5975168.chunk.js",
+  "static/js/1.b5975168.chunk.js.map": "/static/js/1.b5975168.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.66536621.chunk.css.map": "/static/css/main.66536621.chunk.css.map",
+  "static/media/MainImage.jpg": "/static/media/MainImage.8629315f.jpg",
+  "static/media/headshot.jpg": "/static/media/headshot.b96579f4.jpg",
+  "index.html": "/index.html",
+  "precache-manifest.14441672ceac2e19099bfc6b0146f274.js": "/precache-manifest.14441672ceac2e19099bfc6b0146f274.js",
+  "service-worker.js": "/service-worker.js"
 }
