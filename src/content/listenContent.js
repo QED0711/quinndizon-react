@@ -4,7 +4,7 @@ import {compositionBox, soundcloudFrame, scoreFrame} from '../js/Tags'
 export default {
     route: "listen",
     heading: {
-        title: "Listen",
+        title: "Selected Listening",
         subtitle: "List of Works"
     },
     currentComposition: undefined,
@@ -13,7 +13,8 @@ export default {
             "Dark Nebula",
             "for Wind Orchestra",
             "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/heic1517a_0.jpg",
-            "Audio Coming Soon",
+            soundcloudFrame(546384945),
+            // <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546384945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             scoreFrame("https://drive.google.com/file/d/1a9yL3g9sFoHMdZm2iCqPtG44H_hVAwKy/preview"),
             {backgroundPositionY: "10%",}
         ),
@@ -45,7 +46,7 @@ export default {
             "for orchestra",
             "https://images.pexels.com/photos/355863/pexels-photo-355863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             soundcloudFrame(239482583),
-            "Score Source",
+            scoreFrame("https://drive.google.com/file/d/0B8TgLmq2pHPveHdSSU5NZk8xMk0/preview"),
             {backgroundPositionY: "-700px"}
         ),
         compositionBox(
