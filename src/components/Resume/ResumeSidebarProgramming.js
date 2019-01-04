@@ -17,6 +17,7 @@ const ResumeSidebarProgramming = (props) => {
             <p>{content.contact.email}</p>
             <h5>Online</h5>
             <Link to="/"><p>quinndizon.com</p></Link>
+            <a href="https://github.com/QED0711" target="_blank"><p>github</p></a>
             <a href={content.contact.linkedin} target="_blank"><p>linkedin</p></a>
         </div>
         <div className="sidebar-section">

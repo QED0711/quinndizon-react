@@ -17,7 +17,7 @@ export default {
         },
         references: "References available on request",
         musicContent: {
-            intro: "I'm a classically trained musician with two graduate degrees and 7+ years professional experience in composition, conducting, music education and technology, and arts management. For the last 8 years, I have primarily worked as an educator and conductor. I love working with other musicians and students who share my same creative passion for music.",
+            intro: "I'm a classically trained musician with two graduate degrees and 7+ years professional experience in composition, conducting, music education and technology, and arts management. For the last 8 years, I have primarily worked as an educator and conductor, and have completed several composition commissions. I love working with other musicians and students who share my same creative passion for music.",
             skills: {
                 professional: [
                     skillBox(
@@ -93,7 +93,7 @@ export default {
             ],
             education: [
                 educationBox(
-                    "Doctorate of Musical Arts - Composition (ABD)",
+                    "Doctorate of Musical Arts - Composition (ABD - expected completion March 2019)",
                     "University of Maryland College Park",
                     "2015 - Present",
                     ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
@@ -145,12 +145,12 @@ export default {
             ]
         },
         programmingContent: {
-            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to web development so I could more easily share my creations with a larger audience. Bottom line, I love to tinker, play, and create in whatever midium that best suits my needs. When I'm not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
+            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to fullstack web development so I could more easily share my creations with a larger audience. My recent work has focused on music and educational web apps, and my creations are used in university level music courses. I love to tinker, play, and create in whatever midium that best suits my needs. When I'm not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
             skills: {
                 professional: [
                     technologyBox(
                         "Javascript",
-                        ["React + Redux", "Node + npm", "Express", "Jquery + Ajax"]
+                        [ "Node + npm", "React + Redux", "Express", "Jquery + Ajax"]
                     ),
                     technologyBox(
                         "Ruby",
@@ -162,7 +162,7 @@ export default {
                     ),
                     technologyBox(
                         "Databases",
-                        ["SQL", "MongoDB"]
+                        ["SQL - SQLite, Postgresql", "MongoDB + Mongoose", "GraphQL"]
                     ),
                     technologyBox(
                         "Version Control",
