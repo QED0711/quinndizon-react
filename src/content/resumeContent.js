@@ -145,7 +145,13 @@ export default {
             ]
         },
         programmingContent: {
-            intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to fullstack web development so I could more easily share my creations with a larger audience. My recent work has focused on music and educational web apps, and my creations are used in university level music courses. I love to tinker, play, and create in whatever midium that best suits my needs. When I'm not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
+            // intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to fullstack web development so I could more easily share my creations with a larger audience. My recent work has focused on music and educational web apps, and my creations are used in university level music courses. I love to tinker, play, and create in whatever midium that best suits my needs. When I'm not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
+            intro: `
+                I'm a passionate self taught programmer with 5+ years experience with several popular technologies. 
+                My primary experiences are with fullstack web development, and applications that I have designed are regularly used in university level music courses.  
+                In addition to my work as a programmer, I poses a host of important skills gained through my work in music education and arts management roles. 
+                I love working with others who chare my creative passions to build high quality, impactful software.
+            `,
             skills: {
                 professional: [
                     technologyBox(
@@ -186,6 +192,7 @@ export default {
                     "2018",
                     [
                         "- React front end website with redux state management",
+                        "- Responsive design to display well on desktop and mobile platforms",
                         "- Uses React Router for front end routes",
                         "- Deployed on gh-pages"
                     ]
@@ -196,10 +203,10 @@ export default {
                     "https://github.com/QED0711/craigslist-notifier", // GH repo
                     "2018",
                     [
-                        "- Rails backend and JS front end application to monitor and notify users about new Craigslist listings",
+                        "- Rails backend application with JS frontend functionality",
+                        "- Monitors and notifies users of relevant craigslist listings within minutes of them being posted",
                         "- Uses the Delayed Jobs gem to regularly scrape user defined Craigslist listings and sends notifications via action mailer",
-                        "- Notifies users within minutes of new listings without them having to continuously check themselves",
-                        "- Deployed on Heroku"
+                        "- Deployed on Heroku with postgresql database"
                     ]
                 ),
                 projectBox(
@@ -208,9 +215,8 @@ export default {
                     "https://github.com/QED0711/wiki_cluster-cli-app", // GH repo
                     "2018",
                     [
-                        "- Ruby CLI web scraper to search a wikipedia article and find related topics",
-                        "- Finds all linked articles from a given wikipedia page",
-                        "- From the linked articles, returns the most frequently linked topics on other wikipedia pages"
+                        "- An educational CLI to help users understand and form connections among topics in wikipedia articles",
+                        "- Ruby + Nokogiri web scraper searches wikipedia articles and finds the most linked to topics",
                     ]
                 ),
                 projectBox(
@@ -219,10 +225,11 @@ export default {
                     "https://github.com/QED0711/scorestudy", // GH repo
                     "2017",
                     [
-                        "- Interactive JS & ajax frontend application that directs users to random scores on IMSLP.org",
-                        "- Users select a range of composers and genres, and the application produces scores that match the user's selections",
+                        "- Interactive JS & ajax frontend application that directs users to random scores hosted on imslp.org",
+                        "- Users can select a range of composers and genres, and the application produces scores that match the user's selections",
                         "- Node web scraper updates database",
-                        "- Designed as a study tool for the UMD comprehensive exams. Currently used by students in two courses at UMD"
+                        "- Designed as a study tool for the University of Maryland College Park comprehensive exams in music.",
+                        "- Currently used by students in two courses at UMD"
                     ]
                 ),
             ],
