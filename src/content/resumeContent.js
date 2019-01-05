@@ -186,6 +186,17 @@ export default {
             },
             experience: [
                 projectBox(
+                    "Online Course Designer & Software Developer",
+                    "", // website
+                    "", // GH repo
+                    "2019",
+                    [
+                        "- Design and implementation of the online version of the Music Fundamentals course at the University of Maryland College Park",
+                        "- Designed custom software to allow for more efficient and effective methods of assessment",
+                        "- This software streamlined the assessment process, allowing the department to increase available positions in the course by nearly 200% without expending more resources."
+                    ]
+                ),
+                projectBox(
                     "Personal Website",
                     "http://quinndizon.com", // website
                     "https://github.com/QED0711/quinndizon-react", // GH repo
@@ -235,20 +246,20 @@ export default {
             ],
             interests: [
                 interestBox(
-                    "Music Composition & Engraving",
-                    ["Writing music is about creativity and practicality. Making the notation both functional and visually appealing is always an interesting problem to tackle."]
+                    "Music",
+                    ["7+ years working professionaly as a composer, conductor and engraver within academic and professional organizations."]
                 ),
-                interestBox(
-                    "Conducting",
-                    ["Music is a team sport. It's a privilege to work with other musicians and pull something unique and exciting out of a piece of music."]
-                ),
+                // interestBox(
+                //     "Conducting",
+                //     ["Music is a team sport. It's a privilege to work with other musicians and pull something unique and exciting out of a piece of music."]
+                // ),
                 interestBox(
                     "Audio Recording, Editing, & Mastering",
-                    ["Working with audio is about attention to the smallest detail. It may take hours to get something sounding just right, but I love every minute of it."]
+                    ["I have recorded, mixed, and mastered several of my own compositions as well as works of friends and colleagues."]
                 ),
                 interestBox(
                     "Teaching",
-                    ["I have found teaching not only to be a rewarding experience, but one of the best ways to keep learning."]
+                    ["Experience teaching grade school students, as well as advanced college legel music courses."]
                 ),
             ],
             education: [
