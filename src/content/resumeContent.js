@@ -150,7 +150,7 @@ export default {
                 I'm a passionate self taught programmer with 5+ years experience with several popular technologies. 
                 My primary experiences are with fullstack web development, and applications that I have designed are regularly used in university level music courses.  
                 In addition to my work as a programmer, I poses a host of important skills gained through my work in music education and arts management roles. 
-                I love working with others who chare my creative passions to build high quality, impactful software.
+                I love working with others who share my creative passions to build high quality, impactful software.
             `,
             skills: {
                 professional: [
@@ -160,15 +160,15 @@ export default {
                     ),
                     technologyBox(
                         "Ruby",
-                        ["Rails", "Sinatra", "Active Record"]
+                        ["Rails"]
                     ),
                     technologyBox(
                         "HTML + CSS",
-                        ["Bootstrap", "SCSS"]
+                        ["Bootstrap", "SASS"]
                     ),
                     technologyBox(
                         "Databases",
-                        ["SQL - SQLite, Postgresql", "MongoDB + Mongoose", "GraphQL"]
+                        ["SQL - SQLite, Postgresql", "MongoDB + Mongoose", "GraphQL + Apollo"]
                     ),
                     technologyBox(
                         "Version Control",
@@ -188,12 +188,13 @@ export default {
                 projectBox(
                     "Online Course Designer & Software Developer",
                     "", // website
-                    "", // GH repo
+                    "https://github.com/QED0711/music-fundamentals-client", // GH repo
                     "2019",
                     [
                         "- Design and implementation of the online version of the Music Fundamentals course at the University of Maryland College Park",
-                        "- Designed custom software to allow for more efficient and effective methods of assessment",
-                        "- This software streamlined the assessment process, allowing the department to increase available positions in the course by nearly 200% without expending more resources."
+                        "- Created custom software to allow for more efficient and effective methods of assessment",
+                        "- This software streamlined the assessment process, allowing the department to increase available positions in the course by nearly 200% without expending more resources.",
+                        "- The software uses a Node + GraphQL backend with a React + Apollo frontend."
                     ]
                 ),
                 projectBox(
@@ -221,9 +222,9 @@ export default {
                     ]
                 ),
                 projectBox(
-                    "Wiki Cluster",
+                    "Wiki Graph",
                     "", // website
-                    "https://github.com/QED0711/wiki_cluster-cli-app", // GH repo
+                    "https://github.com/QED0711/wiki_graph-cli-app", // GH repo
                     "2018",
                     [
                         "- An educational CLI to help users understand and form connections among topics in wikipedia articles",
@@ -240,14 +241,14 @@ export default {
                         "- Users can select a range of composers and genres, and the application produces scores that match the user's selections",
                         "- Node web scraper updates database",
                         "- Designed as a study tool for the University of Maryland College Park comprehensive exams in music.",
-                        "- Currently used by students in two courses at UMD"
+                        "- Currently used by students in the Style Analysis and Comprehensive Exam Review courses at UMD"
                     ]
                 ),
             ],
             interests: [
                 interestBox(
                     "Music",
-                    ["7+ years working professionaly as a composer, conductor and engraver within academic and professional organizations."]
+                    ["7+ years working professionaly as a composer, conductor and engraver within academic and professional organizations. I have completed numerous commissions, and have won several awards for my work."]
                 ),
                 // interestBox(
                 //     "Conducting",
@@ -255,25 +256,25 @@ export default {
                 // ),
                 interestBox(
                     "Audio Recording, Editing, & Mastering",
-                    ["I have recorded, mixed, and mastered several of my own compositions as well as works of friends and colleagues."]
+                    ["I have recorded, mixed, and mastered several of my own compositions as well as works of friends and colleagues. I served as the lead audio engineer for the University of Maryland New Music Ensemble for three seasons."]
                 ),
                 interestBox(
-                    "Teaching",
-                    ["Experience teaching grade school students, as well as advanced college legel music courses."]
+                    "Music Education",
+                    ["Experience teaching grade school students, as well as advanced college level music courses. Recipient of an Outstanding Graduate Assistant Award from the University of Maryland College Park recognizing me as being in the top 2% of graduate assistants across all disciplines on campus."]
                 ),
             ],
             education: [
-                educationBox(
-                    "Flatiron Community Bootcamp",
-                    "Flatiron School",
-                    "2018",
-                    []
-                ),
                 educationBox(
                     "Doctorate of Musical Arts (ABD)",
                     "University of Maryland College Park",
                     "2015 - Present",
                     ["Flagship Fellow: selected as one of ten incoming doctoral students across all diciplines"]
+                ),
+                educationBox(
+                    "Flatiron Community Coding Bootcamp",
+                    "Flatiron School",
+                    "2018",
+                    []
                 ),
                 educationBox(
                     "Masters in Music - Orchestral Conducting",
