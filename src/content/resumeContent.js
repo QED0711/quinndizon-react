@@ -147,8 +147,8 @@ export default {
         programmingContent: {
             // intro: "I'm a passionate, self taught programmer with 5+ years experience with various technologies. I started by writing small application in Max MSP, and then gradually transitioned to fullstack web development so I could more easily share my creations with a larger audience. My recent work has focused on music and educational web apps, and my creations are used in university level music courses. I love to tinker, play, and create in whatever midium that best suits my needs. When I'm not sitting in front of a piano composing, or in front of a computer programming, I'm day dreaming about what I can build next.",
             intro: `
-                I'm a passionate self taught programmer with 5+ years experience with several popular technologies. 
-                My primary experiences are with fullstack web development, and applications that I have designed are regularly used in university level music courses.  
+                5+ years experience with several popular technologies, and 2 years focused work in web development. 
+                Web apps that I have designed are regularly used in university level music courses.  
                 In addition to my work as a programmer, I poses a host of important skills gained through my work in music education and arts management roles. 
                 I love working with others who share my creative passions to build high quality, impactful software.
             `,
@@ -164,7 +164,7 @@ export default {
                     ),
                     technologyBox(
                         "HTML + CSS",
-                        ["Bootstrap", "SASS"]
+                        ["HTML5", "CSS4","Bootstrap"]
                     ),
                     technologyBox(
                         "Databases",
